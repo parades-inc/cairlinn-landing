@@ -1,5 +1,10 @@
+@font-face {
+  font-family: CitrusGothicSolid-Regular;
+  src: url(./fonts/CitrusGothic-Regular.ttf);
+}
+
 body {
-  background-color: #211F1D;
+  background-color: #211F1D !important;
   margin: 0;
   padding: 0;
 }

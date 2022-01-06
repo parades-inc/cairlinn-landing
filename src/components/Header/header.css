@@ -1,0 +1,32 @@
+header {
+    font-family: "DIN Condensed", serif;
+}
+
+header .app-bar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+
+}
+
+header .app-bar-toolbar {
+    margin-right: 240px;
+    margin-left: 240px;
+    display: flex;
+    align-items: center;
+}
+
+header .pipe-spacer {
+    width: 1px;
+    height: 44px;
+    margin: 10px 20px;
+    background: #FAF7ED;
+    opacity: 0.2;
+}
+
+header img.logo  {
+    max-width: 150px;
+}
+
+

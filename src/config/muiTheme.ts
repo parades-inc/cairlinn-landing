@@ -8,14 +8,14 @@ export const theme = createTheme({
   },
   typography: {
     allVariants: {
-      color: 'white',
+      color: '#FAF7ED',
       fontFamily: [
+        "'CitrusGothicSolid-Regular'",
         "'DIN Condensed'",
         'Roboto'
       ].join(','),
       padding: 0
     },
-
   },
   components: {
     // Name of the component
