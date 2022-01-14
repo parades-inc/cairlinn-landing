@@ -11,8 +11,6 @@ header .app-bar {
 }
 
 header .app-bar-toolbar {
-    margin-right: 240px;
-    margin-left: 240px;
     display: flex;
     align-items: center;
 }

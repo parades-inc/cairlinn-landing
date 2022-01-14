@@ -10,10 +10,11 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
+    position: absolute;
 }
 
 #hero .hero-container .hero-text {
-    position: absolute;
-    top: 214px;
-    left: 270px;
+    /*position: absolute;*/
+    /*top: 214px;*/
+    /*left: 270px;*/
 }
