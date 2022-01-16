@@ -1,6 +1,25 @@
 #our-story {
+    background-image: url("../../../assets/images/wave-lines.png") ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#our-story .our-story-container {
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
-    padding: 8rem 1rem;
+    padding: 8rem 1rem 16rem;
+}
+
+#our-story img.whiskey-coast {
+    margin-top: -25%;
+    max-width: 540px;
+    height: auto;
+}
+
+#our-story img.coords {
+    position: absolute;
+    left: 37px;
+    padding-top: 5%;
 }
