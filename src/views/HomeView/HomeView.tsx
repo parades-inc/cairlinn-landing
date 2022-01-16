@@ -12,6 +12,7 @@ export const HomeView: FC = () => {
       <OurStory/>
       <About/>
       <News/>
+      <JoinUs />
     </div>
   )
 }

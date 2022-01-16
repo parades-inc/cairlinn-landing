@@ -1,0 +1,22 @@
+#joinUs {
+    overflow: hidden;
+}
+#joinUs .join-us-container {
+    padding: 65px 130px 0px 130px;
+}
+#joinUs .join-us-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+#joinUs .join-us-container {
+    align-items: right;
+}
+#joinUs .stack {
+    position: relative;
+    width: 460px;
+    bottom: 540px;
+    left: 640px;
+    padding-top: 10px;
+    padding-right: 200px;
+}
