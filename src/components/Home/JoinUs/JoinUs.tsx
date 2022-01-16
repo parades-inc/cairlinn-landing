@@ -11,27 +11,30 @@ export const JoinUs: FC = () => {
         <div id="joinUs">
             <Box className="join-us-container">
                 <img src={joinUsImage} />
-                {/* <div className="join-us-form"> */}
+
                 <Stack className="stack" spacing={1}>
                     <Typography className="join-us-text" variant="h1">
                         Join Us
                         <br />
                     </Typography>
-                    <TextField id="fullWidth" label="EMAIL" variant="filled" defaultValue="EMAIL" />
-                    <TextField id="fullWidth" defaultValue="DOB (MM/DD/YYYY)" />
-                    <TextField id="fullWidth" defaultValue="ZIP CODE" />
+                    <TextField id="outlined-textarea" label="Email" placeholder="Email" multiline />
+                    <TextField
+                        id="outlined-textarea"
+                        label="DOB (MM/DD/YYYY)"
+                        placeholder="DOB (MM/DD/YYYY)"
+                        multiline
+                    />
+                    <TextField
+                        id="outlined-textarea"
+                        label="ZIP CODE"
+                        placeholder="ZIP CODE"
+                        multiline
+                    />
                     <Button color="primary" variant={"contained"}>
                         GET NOTIFIED
                     </Button>
                 </Stack>
-                {/* </div> */}
             </Box>
         </div>
     );
 };
-/*
-<Typography className="join-text" variant="h1">
-                    Join Us
-                    <br />
-                </Typography>
-*/

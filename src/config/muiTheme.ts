@@ -1,4 +1,7 @@
+import { CenterFocusStrong } from "@mui/icons-material";
 import createTheme from "@mui/material/styles/createTheme";
+import Input from "@mui/material/Input";
+import FilledInput from "@mui/material/FilledInput";
 
 export const theme = createTheme({
     palette: {
@@ -33,10 +36,15 @@ export const theme = createTheme({
                 root: {
                     label: "outlined",
                     variant: "outlined",
-                    //multilineColor: { color: "white" },
-                    backgroundColor: "black",
-                    opacity: 0.2,
+                    // input text needs to be centered
+                    // input text needs to be white
+                    // input text needs to not be impacted by opaqueness
+                    backgroundColor: "grey", // needs to be black but then text doesnt appear
+                    opacity: 0.4,
                 },
+
+                // input: {}, // this causes errors?
+                // FilledInput: {} // same here
             },
         },
     },
