@@ -1,7 +1,7 @@
-import {FC} from "react";
+import {FC} from 'react';
 
 
-import {Box, Button, Grid, Typography} from "@mui/material";
+import {Box, Button, Grid, Typography} from '@mui/material';
 
 
 export const About: FC = () => {
@@ -17,5 +17,5 @@ export const About: FC = () => {
         </Grid>
       </Grid>
     </div>
-  )
-}
+  );
+};

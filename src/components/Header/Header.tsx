@@ -1,10 +1,10 @@
-import {Box, IconButton, MenuItem, Typography, Menu, Button} from "@mui/material";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import MenuIcon from "@mui/icons-material/Menu"
-import {FC} from "react";
-import logo from '../../assets/images/CairlinnBayLogo.png'
-import './header.css'
+import {Box, IconButton, MenuItem, Typography, Menu, Button} from '@mui/material';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import MenuIcon from '@mui/icons-material/Menu';
+import {FC} from 'react';
+import logo from '../../assets/images/CairlinnBayLogo.png';
+import './header.css';
 
 
 export const Header: FC = () => {
@@ -24,5 +24,5 @@ export const Header: FC = () => {
         </Toolbar>
       </AppBar>
     </header>
-  )
-}
+  );
+};

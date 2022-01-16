@@ -8,6 +8,10 @@
     background-color: #2C2A27;
 }
 
+#news .news-container .news-text {
+    padding-top: 8rem;
+}
+
 #news .social-media-image {
     width: 100%;
     height: auto;

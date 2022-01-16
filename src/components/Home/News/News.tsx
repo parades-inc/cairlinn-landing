@@ -1,7 +1,7 @@
-import {FC} from "react"
-import './news.css'
-import socialMediaImage from '../../../assets/images/social-media.png'
-import {Box, Button, Grid, Typography} from "@mui/material";
+import {FC} from 'react';
+import './news.css';
+import socialMediaImage from '../../../assets/images/social-media.png';
+import {Box, Button, Grid, Typography} from '@mui/material';
 
 
 export const News: FC = () => {
@@ -9,7 +9,7 @@ export const News: FC = () => {
     <div id='news'>
       <Box className='news-container' p={10}>
         <Grid container justifyContent={'center'}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className={'news-text'}>
             <Typography variant='h1'>
               News
             </Typography>
@@ -34,5 +34,5 @@ export const News: FC = () => {
 
       </Box>
     </div>
-  )
-}
+  );
+};

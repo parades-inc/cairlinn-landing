@@ -1,9 +1,9 @@
-import {FC} from "react";
-import whiskeyCoast from '../../../assets/images/whiskey-coast.png'
-import coords from '../../../assets/images/coords.png'
-import waves from '../../../assets/images/wave-lines.png'
-import './ourStory.css'
-import {Box, Grid, Typography} from "@mui/material";
+import {FC} from 'react';
+import whiskeyCoast from '../../../assets/images/whiskey-coast.png';
+import coords from '../../../assets/images/coords.png';
+import waves from '../../../assets/images/wave-lines.png';
+import './ourStory.css';
+import {Box, Grid, Typography} from '@mui/material';
 
 
 export const OurStory: FC = () => {
@@ -38,5 +38,5 @@ export const OurStory: FC = () => {
         </Grid>
       </div>
     </div>
-  )
-}
+  );
+};

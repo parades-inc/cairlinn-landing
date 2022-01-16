@@ -1,8 +1,8 @@
-import {FC} from "react";
-import './footer.css'
-import logo from '../../assets/images/CairlinnBayLogo.png'
-import {Box, Button, Grid, Typography} from "@mui/material";
-import {Circle} from "@mui/icons-material";
+import {FC} from 'react';
+import './footer.css';
+import logo from '../../assets/images/CairlinnBayLogo.png';
+import {Box, Button, Grid, Typography} from '@mui/material';
+import {Circle} from '@mui/icons-material';
 
 
 export const Footer: FC = () => {
@@ -22,5 +22,5 @@ export const Footer: FC = () => {
         </Grid>
       </Grid>
     </div>
-  )
-}
+  );
+};
