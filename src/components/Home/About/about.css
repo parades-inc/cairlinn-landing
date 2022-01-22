@@ -3,11 +3,14 @@
 }
 
 #about .about-text {
-    padding: 65px 130px;
+    padding: 65px 120px;
+    max-width: 1660px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about .carousel {
-    padding: 0 130px;
+    padding: 0 calc((100% - 1660px) / 2);
     overflow-x: scroll;
     display: flex;
     gap: 50px;
@@ -18,7 +21,7 @@
    display: none;
 }
 #about .right-buffer {
-    min-width: 130px;
+    width: calc((100vw - 1660px) / 2);
     min-height: 100%;
 }
 #about img {

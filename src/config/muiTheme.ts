@@ -16,7 +16,7 @@ export const theme = createTheme({
       padding: 0,
     },
     h1: {
-      '@media (max-width:600px)': {
+      '@media (max-width: 768px)': {
         fontSize: 40
       },
     }
@@ -42,12 +42,18 @@ export const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          backgroundColor: 'grey', // needs to be black but then text doesnt appear
+          textAlign: 'center',
+          backgroundColor: 'rgba(33, 31, 29, 0.4)', // needs to be black but then text doesnt appear
           borderRadius: 5,
+          outline: 'none',
+          border: 'none',
+
           '::placeholder' : {
-            color: '#327371'
+            textAlign: 'center',
+            color: '#327371',
+            fontSize: 40,
           },
-          marginBottom: 10
+          marginBottom: 10,
         },
       },
     },

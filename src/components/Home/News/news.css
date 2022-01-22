@@ -1,20 +1,19 @@
 #news {
-    margin: 100px 130px 100px 130px;
+    margin: 100px auto;
 }
 
 #news .news-container {
     border-radius: 16px;
     background-color: #2C2A27;
+
 }
 
-#news .news-container .news-text {
-    padding-top: 8rem;
+#news .news-container .news {
 }
 
-#news .social-media-image {
+#news img.social-media-image {
     width: 100%;
-    height: auto;
-    padding: 10% 0;
+    padding: 6rem;
 }
 
 @media only screen and (max-width: 601px) {
@@ -28,7 +27,6 @@
     }
 
     #news .news-container .news-text {
-        padding-top: 2rem;
     }
 
     #news .social-media-image {

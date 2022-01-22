@@ -1,7 +1,6 @@
 import {FC} from 'react';
 import './hero.css';
 import heroImage from '../../../assets/images/hero.png';
-import whiskeyBottle from '../../../assets/images/whiskey-bottle.png';
 import {Box, Button, Grid, Hidden, Typography} from '@mui/material';
 
 
@@ -12,23 +11,20 @@ export const Hero: FC = () => {
       <Box className='hero-container'>
         <img className='hero-background' src={heroImage}/>
         <div className='hero-text'>
-          <Hidden smDown>
-            <Typography variant='h1'>
-              Pioneering<br/>
-              Irish<br/>
-              Whiskey<br/>
-            </Typography>
-          </Hidden>
-          <Hidden smUp>
-            <Typography variant='h1'>
-              Pioneering Irish Whiskey
-            </Typography>
-          </Hidden>
-          <Button variant='contained'>
-            Explore
-          </Button>
+          <Typography variant='h1' sx={{ display: { xs:'none', sm: 'none', md: 'flex' } }}>
+            Pioneering<br/>
+            Irish<br/>
+            Whiskey<br/>
+          </Typography>
+          <Typography variant='h1' sx={{ display: { sm: 'flex', md: 'none' } }}>
+            Pioneering Irish Whiskey
+          </Typography>
+          <Box pt={4}>
+            <Button variant='contained'>
+              Explore
+            </Button>
+          </Box>
         </div>
-        <img className={'whiskey-bottle'} src={whiskeyBottle}/>
       </Box>
     </div>
   );

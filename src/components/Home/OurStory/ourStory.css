@@ -6,14 +6,13 @@
 }
 
 #our-story .our-story-container {
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
-    padding: 8rem 1rem 16rem;
+    margin-top: 200px;
 }
 
 #our-story img.whiskey-coast {
-    margin-top: -25%;
     max-width: 100%;
     height: auto;
 }
@@ -23,3 +22,10 @@
     left: 37px;
     padding-top: 5%;
 }
+
+@media only screen and (max-width: 768px) {
+    #our-story .our-story-container {
+        margin-top: 0;
+    }
+}
+

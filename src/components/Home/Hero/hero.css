@@ -1,58 +1,44 @@
-
-
 #hero {
-    /*overflow: hidden;*/
-    /*background-size: calc(100% - 260px);*/
-    /*background-image: url("../../../assets/images/hero.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
-    /*min-height: 100vh;*/
+    margin-top: 300px;
 }
 
 #hero img.hero-background {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
     position: absolute;
     z-index: -10;
-    padding: 0 130px;
 }
 
 #hero .hero-container {
     overflow: hidden;
-    padding-bottom: 130px;
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    align-items: center;
+    margin-bottom: 300px;
 }
 
 #hero .hero-container .hero-text {
-    padding-top: 20%;
-
-}
-
-#hero .hero-container .whiskey-bottle {
-    margin-top: 10%;
-    height: 80vh;
-
+    position: relative;
+    padding: 1rem 0 1rem 130px;
+    height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
+    #hero {
+        margin-top: 0;
+    }
+    #hero .hero-container {
+        margin-bottom: 100px;
+    }
     #hero img.hero-background {
-        padding: 0;
+        padding: 0 25px;
+        max-width: calc(100% - 25px);
     }
 
     #hero .hero-container .hero-text {
         padding: 10%;
         width: 100px;
-        text-align: center;
-    }
-
-    #hero .hero-container .whiskey-bottle {
-        text-align: center;
-        margin-top: 10%;
-        height: 75vh;
+        text-align: left;
     }
 }
 

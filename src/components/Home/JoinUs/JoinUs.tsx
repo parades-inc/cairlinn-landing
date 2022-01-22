@@ -1,41 +1,57 @@
 import { FC } from 'react';
 import './joinUs.css';
 import joinUsImage from '../../../assets/images/joinUsImage.png';
-import {Box, Button, FormControl, Grid, Stack, Typography} from '@mui/material';
+import {Box, Button, FormControl, Grid, Typography} from '@mui/material';
 import { TextField } from '@mui/material';
 
 export const JoinUs: FC = () => {
   return (
     <div id="joinUs">
+      <Box>
+        <img className='join-us-background' src={joinUsImage}/>
+      </Box>
       <Box className="join-us-container">
-        <Grid container justifyContent={'center'}>
-          <Grid item xs={12} md={4}>
-            <Box className={'join-us-content'}>
-              <Typography className="join-us-text" variant="h1">Join Us</Typography>
-              <form>
-                <FormControl fullWidth>
-                  <TextField
-                    label="Email"
-                    placeholder="Email"
-                  />
-                </FormControl>
-                <FormControl fullWidth>
-                  <TextField
-                    label="DOB (MM/DD/YYYY)"
-                    placeholder="DOB (MM/DD/YYYY)"
-                  />
-                </FormControl>
-                <FormControl fullWidth>
-                  <TextField
-                    label="ZIP CODE"
-                    placeholder="ZIP CODE"
-                  />
-                </FormControl>
-                <Button color="primary" variant={'contained'}>GET NOTIFIED</Button>
-              </form>
-            </Box>
-          </Grid>
-        </Grid>
+        <Box className={'join-us-content'}>
+          <Box className="join-us-text">
+            <Typography variant="h1">Join Us</Typography>
+          </Box>
+          <form>
+            <FormControl fullWidth>
+              <TextField
+                placeholder="Email"
+                variant={'outlined'}
+                InputProps={{
+                  inputProps: {
+                    style: { textAlign: 'center' },
+                  }
+                }}
+              />
+            </FormControl>
+            <FormControl fullWidth>
+              <TextField
+                placeholder="DOB (MM/DD/YYYY)"
+                variant={'outlined'}
+                InputProps={{
+                  inputProps: {
+                    style: { textAlign: 'center' },
+                  }
+                }}
+              />
+            </FormControl>
+            <FormControl fullWidth>
+              <TextField
+                placeholder="ZIP CODE"
+                variant={'outlined'}
+                InputProps={{
+                  inputProps: {
+                    style: { textAlign: 'center' },
+                  }
+                }}
+              />
+            </FormControl>
+            <Button color="primary" fullWidth variant={'contained'}>GET NOTIFIED</Button>
+          </form>
+        </Box>
       </Box>
     </div>
   );

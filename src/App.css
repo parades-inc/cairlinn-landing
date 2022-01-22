@@ -3,5 +3,15 @@
     src: url(./fonts/CitrusGothic-Regular.ttf);
 }
 
+* {
+    color: #FAF7ED !important;
+}
+
+header {
+    max-width: 1660px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 

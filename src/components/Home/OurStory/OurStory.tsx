@@ -11,12 +11,12 @@ export const OurStory: FC = () => {
     <div id='our-story'>
       <img className='coords' src={coords}/>
       <div className={'our-story-container'}>
-        <Grid container justifyContent={'center'}>
+        <Grid container justifyContent={'center'} alignItems={'center'} spacing={8}>
           <Grid item xs={10} md={6}>
             <img className='whiskey-coast' src={whiskeyCoast}/>
           </Grid>
-          <Grid item xs={10} md={4}>
-            <Box className='content'>
+          <Grid item xs={10} md={6}>
+            <Box className='content' my={4}>
               <Typography variant='h1'>
                 Our<br/>
                 Story<br/>
