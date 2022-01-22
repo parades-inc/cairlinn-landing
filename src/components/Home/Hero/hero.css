@@ -1,9 +1,12 @@
+
+
 #hero {
     /*overflow: hidden;*/
+    /*background-size: calc(100% - 260px);*/
     /*background-image: url("../../../assets/images/hero.png");*/
-    /*background-size: 90%;*/
     /*background-repeat: no-repeat;*/
     /*background-position: center;*/
+    /*min-height: 100vh;*/
 }
 
 #hero img.hero-background {
@@ -13,20 +16,45 @@
     height: auto;
     position: absolute;
     z-index: -10;
-    padding: 0px 130px;
+    padding: 0 130px;
 }
 
 #hero .hero-container {
     overflow: hidden;
     padding-bottom: 130px;
-}
-
-#hero .hero-container .whiskey-bottle {
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 #hero .hero-container .hero-text {
-    padding-top: 50%;
-    padding-left: 130px;
+    padding-top: 20%;
+
 }
+
+#hero .hero-container .whiskey-bottle {
+    margin-top: 10%;
+    height: 80vh;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #hero img.hero-background {
+        padding: 0;
+    }
+
+    #hero .hero-container .hero-text {
+        padding: 10%;
+        width: 100px;
+        text-align: center;
+    }
+
+    #hero .hero-container .whiskey-bottle {
+        text-align: center;
+        margin-top: 10%;
+        height: 75vh;
+    }
+}
+
+
+

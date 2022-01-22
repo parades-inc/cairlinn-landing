@@ -10,9 +10,6 @@ export const JoinUs: FC = () => {
       <Box className="join-us-container">
         <Grid container justifyContent={'center'}>
           <Grid item xs={12} md={4}>
-
-          </Grid>
-          <Grid item xs={12} md={4}>
             <Box className={'join-us-content'}>
               <Typography className="join-us-text" variant="h1">Join Us</Typography>
               <form>

@@ -3,18 +3,30 @@
 }
 #joinUs .join-us-container {
     margin: 65px 130px 65px 130px;
-    height: 1000px;
-    background-image: url('../../../assets/images/joinUsImage.png');
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .join-us-content {
-    margin-top: 75%;
 }
 /*#joinUs .join-us-container img {
     width: 100%;
     height: auto;
     border-radius: 16px;
 }*/
+
+@media only screen and (max-width: 601px) {
+    #joinUs {
+        overflow: hidden;
+    }
+    #joinUs .join-us-container {
+        margin: 65px 0;
+
+    }
+
+    .join-us-content {
+        padding: 50px;
+    }
+}

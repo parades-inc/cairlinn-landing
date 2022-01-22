@@ -12,13 +12,13 @@ header .app-bar {
 
 header .app-bar-toolbar {
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 header .pipe-spacer {
     width: 1px;
     height: 44px;
-    margin: 10px 20px;
+    margin: 10px 0px;
     background: #FAF7ED;
     opacity: 0.2;
 }

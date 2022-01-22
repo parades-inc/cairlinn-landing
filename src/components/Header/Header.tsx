@@ -17,7 +17,7 @@ export const Header: FC = () => {
           </Box>
           <Box display={'flex'} justify-content={'flex-end'}>
             <Button>Our Story</Button>
-            <div className={'pipe-spacer'}></div>
+            <div className={'pipe-spacer'}/>
             <Button>News</Button>
             <Button color='primary' variant={'contained'}>Join Us</Button>
           </Box>

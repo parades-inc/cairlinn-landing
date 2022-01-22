@@ -13,7 +13,7 @@ export const Footer: FC = () => {
           &copy; { new Date().getFullYear() } Cairlinn Bay
         </Grid>
         <Grid item xs={12} md={4}>
-          <img src={logo}/>
+          <img className='footer-logo' src={logo}/>
         </Grid>
         <Grid item xs={12} md={4}>
           <Circle />

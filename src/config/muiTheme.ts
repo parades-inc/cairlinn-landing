@@ -15,6 +15,11 @@ export const theme = createTheme({
       fontFamily: ['\'CitrusGothicSolid-Regular\'', '\'DIN Condensed\'', 'Roboto'].join(','),
       padding: 0,
     },
+    h1: {
+      '@media (max-width:600px)': {
+        fontSize: 40
+      },
+    }
   },
   components: {
     // Name of the component
@@ -27,6 +32,10 @@ export const theme = createTheme({
           fontStyle: 'normal',
           fontWeight: 'bold',
           fontFamily: ['\'DIN Condensed\''].join(','),
+          '@media (max-width:786px)': {
+            fontSize: 16,
+            padding: '8px 10px 4px 10px',
+          },
         },
       },
     },
@@ -34,6 +43,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: 'grey', // needs to be black but then text doesnt appear
+          borderRadius: 5,
           '::placeholder' : {
             color: '#327371'
           },

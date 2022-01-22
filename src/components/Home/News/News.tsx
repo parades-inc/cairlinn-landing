@@ -8,8 +8,8 @@ export const News: FC = () => {
   return (
     <div id='news'>
       <Box className='news-container' p={10}>
-        <Grid container justifyContent={'center'}>
-          <Grid item xs={12} md={6} className={'news-text'}>
+        <Grid container justifyContent={'center'} spacing={4}>
+          <Grid item xs={12} md={4} className={'news-text'}>
             <Typography variant='h1'>
               News
             </Typography>

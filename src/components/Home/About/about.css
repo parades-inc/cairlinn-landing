@@ -1,6 +1,45 @@
 #about {
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 8rem 1rem;
+
+}
+
+#about .about-text {
+    padding: 65px 130px;
+}
+
+#about .carousel {
+    padding: 0 130px;
+    overflow-x: scroll;
+    display: flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+}
+
+#about .carousel::-webkit-scrollbar {
+   display: none;
+}
+#about .right-buffer {
+    min-width: 130px;
+    min-height: 100%;
+}
+#about img {
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    #about .about-text {
+        padding: 33px 65px;
+    }
+    #about .carousel {
+        padding: 0 65px;
+        gap: 20px;
+    }
+    #about .right-buffer {
+        min-width: 65px;
+        min-height: 100%;
+    }
+    #about img {
+        max-height: 40vh;
+        margin-bottom: 12px;
+    }
 }
