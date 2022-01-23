@@ -31,7 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/*.tsx' 'src/**/**.ts'",
-    "lint:fix": "eslint --fix 'src/**/**.tsx' 'src/**/**.ts'"
+    "lint:fix": "eslint --fix 'src/**/**.tsx' 'src/**/**.ts'",
+    "deploy": "yarn build && netlify deploy --prod"
   },
   "eslintConfig": {
     "extends": [

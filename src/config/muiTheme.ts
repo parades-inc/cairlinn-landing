@@ -16,6 +16,9 @@ export const theme = createTheme({
       '@media (max-width: 900px)': {
         fontSize: 60
       },
+      '@media (max-width: 600px)': {
+        fontSize: 40
+      },
     }
   },
   components: {

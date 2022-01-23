@@ -22,8 +22,8 @@ export const Hero: FC = () => {
             marginLeft: 'auto',
             marginRight: 'auto',
             zIndex: -10,
-            padding: { xs: '0 25px', xl: 0},
-            maxWidth: { xs: 'calc(100% - 50px)', xl: '100%' },
+            padding: { xs: 0, sm: '0 25px', xl: 0},
+            maxWidth: { xs: '100%', sm: 'calc(100% - 50px)', xl: '100%' },
           }}
           alt="The house from the offer."
           src={heroImage}
@@ -42,7 +42,7 @@ export const Hero: FC = () => {
           </Typography>
           <Box sx={{
             display: 'flex',
-            padding: { xs: '1rem 0 1rem 65px', md: '1rem 0 1rem 130px' },
+            padding: { xs: '0 0 1rem 65px', md: '1rem 0 1rem 130px' },
           }}>
             <Button variant='contained'>
               Explore

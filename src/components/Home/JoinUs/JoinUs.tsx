@@ -7,8 +7,8 @@ import { TextField } from '@mui/material';
 export const JoinUs: FC = () => {
   return (
     <Box id='joinUs' sx={{
-      marginTop: { xs: 0, sm: '75px', md: '150px', lg: '400px' },
-      marginBottom: { xs: 0, sm: '75px', md: '150px', lg: '400px' },
+      marginTop: { xs: '50px', sm: '75px', md: '150px', lg: '400px' },
+      marginBottom: { xs: '50px', sm: '75px', md: '150px', lg: '400px' },
     }}>
       <Box className="join-us-container" sx={{
         overflow: 'hidden',
