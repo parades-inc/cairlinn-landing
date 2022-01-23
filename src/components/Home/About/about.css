@@ -1,48 +1,12 @@
-#about {
-
-}
-
-#about .about-text {
-    padding: 65px 120px;
-    max-width: 1660px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#about .carousel {
-    padding: 0 calc((100% - 1660px) / 2);
-    overflow-x: scroll;
-    display: flex;
-    gap: 50px;
-    flex-wrap: nowrap;
-}
-
-#about .carousel::-webkit-scrollbar {
-   display: none;
-}
-#about .right-buffer {
-    width: calc((100vw - 1660px) / 2);
-    min-height: 100%;
-}
 #about img {
     border-radius: 16px;
     margin-bottom: 25px;
+    max-height: 50vh;
 }
 
-@media only screen and (max-width: 768px) {
-    #about .about-text {
-        padding: 33px 65px;
-    }
-    #about .carousel {
-        padding: 0 65px;
-        gap: 20px;
-    }
-    #about .right-buffer {
-        min-width: 65px;
-        min-height: 100%;
-    }
+@media only screen and (max-width: 1200px) {
     #about img {
-        max-height: 40vh;
+        max-height: 30vh;
         margin-bottom: 12px;
     }
 }

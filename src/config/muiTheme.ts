@@ -1,7 +1,4 @@
-import { CenterFocusStrong } from '@mui/icons-material';
 import createTheme from '@mui/material/styles/createTheme';
-import Input from '@mui/material/Input';
-import FilledInput from '@mui/material/FilledInput';
 
 export const theme = createTheme({
   palette: {
@@ -16,8 +13,8 @@ export const theme = createTheme({
       padding: 0,
     },
     h1: {
-      '@media (max-width: 768px)': {
-        fontSize: 40
+      '@media (max-width: 900px)': {
+        fontSize: 60
       },
     }
   },
@@ -32,10 +29,11 @@ export const theme = createTheme({
           fontStyle: 'normal',
           fontWeight: 'bold',
           fontFamily: ['\'DIN Condensed\''].join(','),
-          '@media (max-width:786px)': {
+          '@media (max-width:600px)': {
             fontSize: 16,
             padding: '8px 10px 4px 10px',
           },
+
         },
       },
     },
@@ -43,15 +41,13 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           textAlign: 'center',
-          backgroundColor: 'rgba(33, 31, 29, 0.4)', // needs to be black but then text doesnt appear
+          backgroundColor: 'rgba(33, 31, 29, 0.5)', // needs to be black but then text doesnt appear
           borderRadius: 5,
           outline: 'none',
           border: 'none',
-
           '::placeholder' : {
             textAlign: 'center',
             color: '#327371',
-            fontSize: 40,
           },
           marginBottom: 10,
         },

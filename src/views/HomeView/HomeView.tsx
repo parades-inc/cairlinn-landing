@@ -1,4 +1,3 @@
-import Box from '@mui/material/Box';
 import {FC} from 'react';
 import {Hero} from '../../components/Home/Hero/Hero';
 import {OurStory} from '../../components/Home/OurStory/OurStory';

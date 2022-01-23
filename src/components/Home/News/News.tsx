@@ -6,10 +6,18 @@ import {Box, Button, Grid, Typography} from '@mui/material';
 
 export const News: FC = () => {
   return (
-    <div id='news'>
-      <Box className='news-container' >
-        <Grid container justifyContent={'center'} spacing={4} alignItems={'center'}>
-          <Grid item xs={12} md={4} className={'news-text'}>
+    <Box id='news' sx={{
+      margin: { xs: '0 25px' },
+      width: { xs: 'calc(100% - 50px)' },
+      padding: { xs: '0 25px', md: '0' }
+    }}>
+      <Box className='news-container' sx={{
+        borderRadius: '16px',
+        backgroundColor: '#2C2A27',
+        padding: '50px 0'
+      }}>
+        <Grid container justifyContent={'space-around'} alignItems={'center'}>
+          <Grid item xs={10} md={4} className={'news-text'}>
             <Typography variant='h1'>
               News
             </Typography>
@@ -28,13 +36,18 @@ export const News: FC = () => {
               </Button>
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <img className='social-media-image' src={socialMediaImage}/>
+          <Grid item xs={10} md={6}>
+            <Box
+              component="img"
+              sx={{
+                maxWidth: { xs: '100%'},
+              }}
+              alt="Whisky Bottle Coastline"
+              src={socialMediaImage}
+            />
           </Grid>
         </Grid>
-
-
       </Box>
-    </div>
+    </Box>
   );
 };

@@ -1,7 +1,6 @@
-import {Box, IconButton, MenuItem, Typography, Menu, Button} from '@mui/material';
+import {Box, Button} from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import MenuIcon from '@mui/icons-material/Menu';
 import {FC} from 'react';
 import logo from '../../assets/images/CairlinnBayLogo.png';
 import './header.css';

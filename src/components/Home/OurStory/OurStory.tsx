@@ -8,15 +8,45 @@ import {Box, Grid, Typography} from '@mui/material';
 
 export const OurStory: FC = () => {
   return (
-    <div id='our-story'>
-      <img className='coords' src={coords}/>
-      <div className={'our-story-container'}>
-        <Grid container justifyContent={'center'} alignItems={'center'} spacing={8}>
-          <Grid item xs={10} md={6}>
-            <img className='whiskey-coast' src={whiskeyCoast}/>
+    <Box id='our-story' sx={{
+      backgroundImage: `url(${waves})`,
+      backgroundPosition: 'bottom',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100%',
+      marginTop: { xs: '150px' },
+      marginBottom: { xs: '150px' }
+    }}>
+      <Box
+        component="img"
+        sx={{
+          position: 'absolute',
+          left: '37px',
+          height: { xs: '25%', md: '45%'}
+        }}
+        alt="The house from the offer."
+        src={coords}
+      />
+      <Box className={'our-story-container'}
+        sx={{
+          maxWidth: '1440px',
+          margin: '0 auto'
+        }}
+      >
+        <Grid container justifyContent={'center'} alignItems={'center'} spacing={4}>
+          <Grid item xs={10} md={5} sx={{
+            display: { xs: 'none', md: 'flex'}
+          }}>
+            <Box
+              component="img"
+              sx={{
+                maxWidth: { xs: '100%'},
+              }}
+              alt="Whisky Bottle Coastline"
+              src={whiskeyCoast}
+            />
           </Grid>
-          <Grid item xs={10} md={6}>
-            <Box className='content' my={4}>
+          <Grid item xs={8} md={6}>
+            <Box className='content'>
               <Typography variant='h1'>
                 Our<br/>
                 Story<br/>
@@ -36,7 +66,7 @@ export const OurStory: FC = () => {
             </Box>
           </Grid>
         </Grid>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };

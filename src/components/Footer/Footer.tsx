@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import './footer.css';
 import logo from '../../assets/images/CairlinnBayLogo.png';
-import {Box, Button, Grid, Typography} from '@mui/material';
+import {Grid} from '@mui/material';
 import {Circle} from '@mui/icons-material';
 
 
