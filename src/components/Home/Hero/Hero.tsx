@@ -1,12 +1,13 @@
 import {FC} from 'react';
-import heroVideo from '../../../assets/videos/hero-video.mp4'
+import heroVideo from '../../../assets/videos/hero-video.mp4';
 import {Box, Button, Typography} from '@mui/material';
+
 
 
 export const Hero: FC = () => {
   return (
     <Box id='hero' sx={{
-      marginTop: { xs: '50px', sm: '100px', md: '200px', lg: '200px' },
+      marginTop: { xs: '75px', sm: '100px', md: '200px', lg: '200px' },
       marginBottom: { xs: 0, sm: '200px', md: '200px', lg: '400px' },
     }}>
       <Box className='hero-container' sx={{
@@ -20,11 +21,13 @@ export const Hero: FC = () => {
             position: 'absolute',
             marginLeft: 'auto',
             marginRight: 'auto',
+            overflow: 'hidden',
+            margin: { xs: '0', sm: '0 25px', xl: 0},
             '& video': {
-              borderRadius: '16px',
+              borderRadius: { sm: '16px' },
               zIndex: -10,
-              margin: { xs: '0', sm: '0 25px', xl: 0},
-              maxWidth: { xs: '100%', xl: '1440px' },
+
+              maxWidth: { xs: '150%', sm: '100%', xl: '1440px' },
             }
           }}
         >
