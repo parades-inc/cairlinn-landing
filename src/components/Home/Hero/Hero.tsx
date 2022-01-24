@@ -1,4 +1,6 @@
 import {FC} from 'react';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import heroVideo from '../../../assets/videos/hero-video.mp4';
 import {Box, Button, Typography} from '@mui/material';
 
@@ -7,8 +9,8 @@ import {Box, Button, Typography} from '@mui/material';
 export const Hero: FC = () => {
   return (
     <Box id='hero' sx={{
-      marginTop: { xs: '75px', sm: '100px', md: '200px', lg: '200px' },
-      marginBottom: { xs: 0, sm: '200px', md: '200px', lg: '400px' },
+      marginTop: { xs: '75px', sm: '100px', md: '200px', lg: '200px', xl: '150px' },
+      marginBottom: { xs: 0, sm: '200px', md: '200px', lg: '300px', xl: '300px' },
     }}>
       <Box className='hero-container' sx={{
         overflow: 'hidden',
