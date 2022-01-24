@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import './footer.css';
 import logo from '../../assets/images/CairlinnBayLogo.png';
-import {Grid} from '@mui/material';
+import {Grid, Typography} from '@mui/material';
 import {Circle} from '@mui/icons-material';
 
 
@@ -10,7 +10,11 @@ export const Footer: FC = () => {
     <div id='footer'>
       <Grid container justifyContent={'center'} alignItems={'center'} >
         <Grid item xs={12} md={4}>
-          &copy; { new Date().getFullYear() } Cairlinn Bay
+          <Typography variant={'body1'} sx={{
+            marginBottom: '25px'
+          }}>
+            &copy; { new Date().getFullYear() } Cairlinn Bay
+          </Typography>
         </Grid>
         <Grid item xs={12} md={4}>
           <img className='footer-logo' src={logo}/>

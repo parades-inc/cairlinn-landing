@@ -12,8 +12,8 @@ export const About: FC = () => {
       margin: '75px auto'
     }}>
       <Box className={'about-text'} sx={{
-        padding: { xs: '33px 65px', md: '65px 120px' },
-        maxWidth: '1660px',
+        padding: { xs: '33px 65px', lg: '65px calc((100vw - 1440px) / 2)px' },
+        maxWidth: '1440px',
         margin: '0 auto'
       }}>
         <Typography variant='h1'>
@@ -23,13 +23,18 @@ export const About: FC = () => {
         </Typography>
       </Box>
       <Box className={'carousel'} sx={{
-        padding: { xs: '0 50px' },
+        padding: { xs: '0 0 0 65px', lg: '0 calc((100vw - 1440px) / 2)px' },
         overflowX: 'scroll',
         display: 'flex',
         gap: { xs: '20px', md: '50px' },
         flexWrap: 'nowrap',
         '&::-webkit-scrollbar': {
           display: 'none'
+        },
+        '& img': {
+          borderRadius: '16px',
+          marginBottom: { xs: '12px', md: '25px' },
+          maxHeight: { xs: '20vh', sm: '30vh', md: '50vh'}
         }
       }}>
         <Box>
@@ -45,7 +50,7 @@ export const About: FC = () => {
           <Typography variant={'h6'}>Virgin Oak Barrels</Typography>
         </Box>
         <Box className={'right-buffer'} sx={{
-          minWidth: { xs: '65px', md: 'calc((100vw - 1660px) / 2)' },
+          padding: { xs: '33px', md: '65px' },
           minHeight: '100%'
         }}/>
       </Box>

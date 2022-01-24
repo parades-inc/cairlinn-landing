@@ -1,33 +1,37 @@
 import {FC} from 'react';
-import heroImage from '../../../assets/images/hero.png';
+import heroVideo from '../../../assets/videos/hero-video.mp4'
 import {Box, Button, Typography} from '@mui/material';
 
 
 export const Hero: FC = () => {
   return (
     <Box id='hero' sx={{
-      marginTop: { xs: 0, sm: '100px', md: '200px', lg: '300px' },
+      marginTop: { xs: '50px', sm: '100px', md: '200px', lg: '200px' },
       marginBottom: { xs: 0, sm: '200px', md: '200px', lg: '400px' },
-
     }}>
       <Box className='hero-container' sx={{
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
+        verticalAlign: 'top'
       }}>
         <Box
-          component="img"
           sx={{
             position: 'absolute',
             marginLeft: 'auto',
             marginRight: 'auto',
-            zIndex: -10,
-            padding: { xs: 0, sm: '0 25px', xl: 0},
-            maxWidth: { xs: '100%', sm: 'calc(100% - 50px)', xl: '100%' },
+            '& video': {
+              borderRadius: '16px',
+              zIndex: -10,
+              margin: { xs: '0', sm: '0 25px', xl: 0},
+              maxWidth: { xs: '100%', xl: '1440px' },
+            }
           }}
-          alt="The house from the offer."
-          src={heroImage}
-        />
+        >
+          <video autoPlay playsInline muted loop>
+            <source src={heroVideo} type="video/mp4"/>
+          </video>
+        </Box>
         <div className='hero-text' style={{
           position: 'relative',
           height: '100%'

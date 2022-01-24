@@ -25,10 +25,10 @@ export const News: FC = () => {
               Perhaps you want to talk about the timeline here, can put background photo on this if not too distracting.
             </Typography>
             <ul>
-              <li>Launch Dates</li>
-              <li>Rollout information</li>
-              <li>Merch</li>
-              <li>Links to other documents or sponsors</li>
+              <li><Typography variant='body1'>Launch Dates</Typography></li>
+              <li><Typography variant='body1'>Rollout Information</Typography></li>
+              <li><Typography variant='body1'>Merch</Typography></li>
+              <li><Typography variant='body1'>Links to other documents or sponsors</Typography></li>
             </ul>
             <Box py={6}>
               <Button variant='contained'>
