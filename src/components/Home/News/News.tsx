@@ -2,19 +2,23 @@ import {FC} from 'react';
 import './news.css';
 import socialMediaImage from '../../../assets/images/social-media.png';
 import {Box, Button, Grid, Typography} from '@mui/material';
+import waves from '../../../assets/images/wave-lines.png';
 
 
 export const News: FC = () => {
   return (
     <Box id='news' sx={{
-      margin: { xs: '0 25px' },
-      width: { xs: 'calc(100% - 50px)' },
-      padding: { xs: '0 25px', md: '0' }
+      margin: { xs: '0 0px' },
+      padding: { xs: '0', md: '0' },
+      backgroundImage: `url(${waves})`,
+      backgroundPosition: 'bottom',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100%',
     }}>
       <Box className='news-container' sx={{
         borderRadius: '16px',
-        backgroundColor: '#2C2A27',
-        padding: '50px 0'
+        maxWidth: '1440px',
+        margin: '0 auto'
       }}>
         <Grid container justifyContent={'space-around'} alignItems={'center'}>
           <Grid item xs={10} md={4} className={'news-text'}>

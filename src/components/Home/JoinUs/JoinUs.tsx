@@ -8,6 +8,7 @@ import joinUsImage from '../../../assets/images/joinUsImage.jpg';
 import {Box, Button, FormControl, Input, Typography} from '@mui/material';
 import { TextField } from '@mui/material';
 import axios from 'axios';
+import waves from '../../../assets/images/wave-lines.png';
 
 interface CustomProps {
   onChange: (event: { target: { name: string; value: string } }) => void;
@@ -22,7 +23,7 @@ const TextMaskCustom = React.forwardRef<HTMLElement, CustomProps>(
         {...other}
         mask={'##/##/####'}
         definitions={{
-          '#': /[1-9]/,
+          '#': /[0-9]/,
         }}
         inputRef={ref}
         onAccept={(value: any) => onChange({ target: { name: props.name, value } })}
