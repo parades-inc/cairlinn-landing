@@ -36,7 +36,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint 'src/*.tsx' 'src/**/**.ts'",
     "lint:fix": "eslint --fix 'src/**/**.tsx' 'src/**/**.ts'",
-    "deploy": "yarn build && netlify deploy --prod --dir './build'"
+    "deploy": "yarn build && netlify deploy --prod --dir './build'",
+    "save": "git add . && git commit -m \"adjustments\" && git push origin working"
   },
   "eslintConfig": {
     "extends": [
