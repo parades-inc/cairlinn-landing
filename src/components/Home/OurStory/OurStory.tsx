@@ -20,6 +20,7 @@ export const OurStory: FC = () => {
         component="img"
         sx={{
           position: 'absolute',
+          marginTop: { xs: '50px', md: '100px'},
           left: { xs: '18px', md: '37px'},
           height: { xs: '25%', md: '45%'}
         }}

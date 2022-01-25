@@ -23,7 +23,7 @@ export const About: FC = () => {
         </Typography>
       </Box>
       <Box className={'carousel'} sx={{
-        padding: { xs: '0 0 0 65px', lg: '0 calc((100vw - 1440px) / 2)px' },
+        padding: { xs: '0 0 0 65px', lg: '0 130px' },
         overflowX: 'scroll',
         display: 'flex',
         gap: { xs: '20px', md: '50px' },

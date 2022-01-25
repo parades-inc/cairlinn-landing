@@ -9,7 +9,7 @@ import {Box, Button, Typography} from '@mui/material';
 export const Hero: FC = () => {
   return (
     <Box id='hero' sx={{
-      marginTop: { xs: '75px', sm: '100px', md: '200px', lg: '200px', xl: '150px' },
+      marginTop: { xs: '104px', sm: '50px', md: '100px', lg: '150px', xl: '150px' },
       marginBottom: { xs: 0, sm: '200px', md: '200px', lg: '300px', xl: '300px' },
     }}>
       <Box className='hero-container' sx={{
@@ -28,7 +28,6 @@ export const Hero: FC = () => {
             '& video': {
               borderRadius: { sm: '16px' },
               zIndex: -10,
-
               maxWidth: { xs: '150%', sm: '100%', xl: '1440px' },
             }
           }}
@@ -53,9 +52,12 @@ export const Hero: FC = () => {
             display: 'flex',
             padding: { xs: '0 0 1rem 65px', md: '1rem 0 1rem 130px' },
           }}>
-            <Button variant='contained'>
-              Explore
-            </Button>
+            <a href='#our-story'>
+              <Button variant='contained'>
+                Explore
+              </Button>
+            </a>
+
           </Box>
         </div>
       </Box>

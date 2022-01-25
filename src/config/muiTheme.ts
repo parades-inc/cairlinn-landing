@@ -19,7 +19,7 @@ export const theme = createTheme({
       '@media (max-width: 600px)': {
         fontSize: 40
       },
-    }
+    },
   },
   components: {
     // Name of the component

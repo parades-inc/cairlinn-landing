@@ -31,9 +31,11 @@ export const News: FC = () => {
               <li><Typography variant='body1'>Links to other documents or sponsors</Typography></li>
             </ul>
             <Box py={6}>
-              <Button variant='contained'>
-                Join Instagram
-              </Button>
+              <a href={'https://www.instagram.com/cairlinnbay/'} target={'_blank'} rel="noreferrer" >
+                <Button variant='contained'>
+                  Join Instagram
+                </Button>
+              </a>
             </Box>
           </Grid>
           <Grid item xs={10} md={6}>

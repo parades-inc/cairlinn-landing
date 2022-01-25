@@ -6,9 +6,13 @@
 * {
     color: #FAF7ED !important;
 }
+a {
+    text-decoration: none;
+}
 
 header {
-    max-width: 1440px;
+    max-width: 1390px;
+    height: 140px;
     margin-right: auto;
     margin-left: auto;
 }
