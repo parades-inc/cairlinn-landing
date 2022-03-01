@@ -69,8 +69,10 @@ export const OurStory: FC = () => {
             <Box
               component="img"
               sx={{
+                position: 'absolute',
                 marginTop: { xs: '50px', md: '100px'},
-                height: { xs: '50px', md: '80px'}
+                height: { xs: '50px', md: '80px'},
+                right: { xs: '18px', md: '37px'},
               }}
               alt="The house from the offer."
               src={latitude}
