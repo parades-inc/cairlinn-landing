@@ -1,0 +1,56 @@
+/*#joinUs {*/
+/*    overflow-y: hidden;*/
+/*    border-radius: 16px;*/
+/*}*/
+
+/*#joinUs img.join-us-background {*/
+/*    max-width: 1660px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    position: absolute;*/
+/*    z-index: -10;*/
+/*}*/
+
+/*#joinUs .join-us-container {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*    height: 100%;*/
+/*    position: relative;*/
+/*    min-height: 1000px;*/
+/*}*/
+
+/*.join-us-content {*/
+/*    width: 40%;*/
+/*    text-align: center;*/
+/*    padding: 130px;*/
+/*    margin-right: 130px;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+/*.join-us-text {*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+
+/*@media only screen and (max-width: 601px) {*/
+/*    #joinUs {*/
+
+/*    }*/
+
+/*    #joinUs img.join-us-background {*/
+/*        max-width: 100%;*/
+/*    }*/
+
+/*    #joinUs .join-us-container {*/
+/*        justify-content: center;*/
+/*        align-items: flex-start;*/
+/*    }*/
+
+/*    .join-us-content {*/
+/*        width: 40%;*/
+/*        padding: 0;*/
+/*        margin: 0;*/
+
+/*    }*/
+/*}*/

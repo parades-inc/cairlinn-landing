@@ -1,9 +1,9 @@
 import React from 'react';
 import {Route, Routes } from 'react-router-dom';
-import { Header } from "./components/Header/Header";
-import {HomeView} from "./views/HomeView/HomeView";
+import { Header } from './components/Header/Header';
+import {HomeView} from './views/HomeView/HomeView';
 import './App.css';
-import {Footer} from "./components/Footer/Footer";
+import {Footer} from './components/Footer/Footer';
 
 function App() {
   return (
