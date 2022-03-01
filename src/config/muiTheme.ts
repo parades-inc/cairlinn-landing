@@ -36,7 +36,6 @@ export const theme = createTheme({
             fontSize: 16,
             padding: '8px 10px 4px 10px',
           },
-
         },
       },
     },

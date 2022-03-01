@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {theme} from './config/muiTheme';
+import { theme } from './config/muiTheme';
 import { ThemeProvider } from '@mui/material/styles';
 
 

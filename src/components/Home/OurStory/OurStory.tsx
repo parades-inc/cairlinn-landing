@@ -1,6 +1,7 @@
 import {FC} from 'react';
 import whiskeyCoast from '../../../assets/images/whiskey-coast.png';
-import coords from '../../../assets/images/coords.png';
+import longitude from '../../../assets/images/coords_longitude.png';
+import latitude from '../../../assets/images/coords_latitude.png';
 import waves from '../../../assets/images/wave-lines.png';
 import './ourStory.css';
 import {Box, Grid, Typography} from '@mui/material';
@@ -25,7 +26,7 @@ export const OurStory: FC = () => {
           height: { xs: '25%', md: '45%'}
         }}
         alt="The house from the offer."
-        src={coords}
+        src={longitude}
       />
       <Box className={'our-story-container'}
         sx={{
@@ -65,6 +66,15 @@ export const OurStory: FC = () => {
                 Ours is a pioneering Irish spirit.
               </Typography>
             </Box>
+            <Box
+              component="img"
+              sx={{
+                marginTop: { xs: '50px', md: '100px'},
+                height: { xs: '50px', md: '80px'}
+              }}
+              alt="The house from the offer."
+              src={latitude}
+            />
           </Grid>
         </Grid>
       </Box>
