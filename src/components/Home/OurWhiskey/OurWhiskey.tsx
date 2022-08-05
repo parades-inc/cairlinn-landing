@@ -43,6 +43,17 @@ const images: ImageData[] = [
 export const OurWhiskey: FC = () => {
   return (
     <Box id={'our-whiskey'}>
+      <Box className={'about-text'} sx={{
+        padding: { xs: '33px 65px', lg: '65px calc((100vw - 1440px) / 2)px' },
+        maxWidth: '1440px',
+        margin: '0 auto'
+      }}>
+        <Typography variant='h2'>
+          Authentic<br/>
+          Approachable Irish<br/>
+          Whiskey<br/>
+        </Typography>
+      </Box>
       <Grid container sx={{
         overflowX: 'scroll',
         display: 'flex',
@@ -59,7 +70,9 @@ export const OurWhiskey: FC = () => {
                   width: '100%',
                 }}
               />
-              <Typography variant={'h3'}>
+              <Typography variant={'h3'} sx={{
+                marginTop: '20px'
+              }}>
                 {imageData.title}
               </Typography>
               <Typography variant={'body1'}>
