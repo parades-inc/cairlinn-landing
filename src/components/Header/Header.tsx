@@ -29,8 +29,8 @@ export const Header: FC = () => {
           <a href='#our-story'>
             <Button>Our Story</Button>
           </a>
-          <a href='#our-whisky'>
-            <Button>Our Whisky</Button>
+          <a href='#our-whiskey'>
+            <Button>Our Whiskey</Button>
           </a>
           <a href='#our-cocktails'>
             <Button>Our Cocktails</Button>
