@@ -160,6 +160,14 @@ export const JoinUs: FC = () => {
               <Typography variant={'h5'}>{ responseState }</Typography>
             </Box>
           )}
+          <Box sx={{
+            marginTop: 2
+          }}>
+            <a href={'mailto:cgani@theouterkind.com'}>
+              <Button color="primary" fullWidth variant={'contained'} onClick={handleSubmit}>CONTACT US</Button>
+            </a>
+          </Box>
+
         </Box>
       </Box>
     </Box>
