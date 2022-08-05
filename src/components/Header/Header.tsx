@@ -29,6 +29,12 @@ export const Header: FC = () => {
           <a href='#our-story'>
             <Button>Our Story</Button>
           </a>
+          <a href='#our-whisky'>
+            <Button>Our Whisky</Button>
+          </a>
+          <a href='#our-cocktails'>
+            <Button>Our Cocktails</Button>
+          </a>
           <Box className={'pipe-spacer'} sx={{
             width: '1px',
             height: '100%',
