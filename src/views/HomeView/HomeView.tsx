@@ -8,14 +8,16 @@ import './home.css';
 import { AgeDialog } from '../../components/AgeDialog/AgeDialog';
 import {ImageHero} from '../../components/Home/Hero/ImageHero';
 import {OurWhiskey} from '../../components/Home/OurWhiskey/OurWhiskey';
+import {Cocktails} from '../../components/Home/Cocktails/Cocktails';
 export const HomeView: FC = () => {
   return (
     <div id='home'>
       <AgeDialog/>
       <ImageHero/>
       <Hero/>
-      <OurWhiskey/>
       <OurStory/>
+      <OurWhiskey/>
+      <Cocktails/>
       <About/>
       <News/>
       <JoinUs />
