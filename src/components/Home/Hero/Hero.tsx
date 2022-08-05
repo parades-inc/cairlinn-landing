@@ -38,27 +38,32 @@ export const Hero: FC = () => {
         </Box>
         <div className='hero-text' style={{
           position: 'relative',
-          height: '100%'
+          height: '100%',
         }}>
-          <Typography variant='h1' sx={{
+          {/*<Typography variant='h1' sx={{*/}
+          {/*  display: 'flex',*/}
+          {/*  padding: { xs: '1rem 0 1rem 65px', md: '1rem 0 1rem 130px' },*/}
+          {/*}}>*/}
+          {/*  Pioneering<br/>*/}
+          {/*  Irish<br/>*/}
+          {/*  Whiskey<br/>*/}
+          {/*</Typography>*/}
+          <Typography variant='h5' sx={{
             display: 'flex',
-            padding: { xs: '1rem 0 1rem 65px', md: '1rem 0 1rem 130px' },
+            padding: { xs: '2rem', md: '4rem' },
+            fontSize: { xs: '20px', sm: '25px', md: '35px' },
           }}>
-            Pioneering<br/>
-            Irish<br/>
-            Whiskey<br/>
+            We believe our whiskey should not be bound by rules and regulations or shackled to history and convention.
+            <br/>
+            <br/>
+            Our whiskey comes from the originality of the people who make it and the people who drink it. True to the Irish spirit that the future holds more than the past and that anything is possible.
+            <br/>
+            <br/>
+            We are proud of our traditions right enough, but we are driven to build on them, looking for ways to craft whiskey that is inspiring, diverse and above all enjoyable.
+            <br/>
+            <br/>
+            Ours is a pioneering Irish spirit.
           </Typography>
-          <Box sx={{
-            display: 'flex',
-            padding: { xs: '0 0 1rem 65px', md: '1rem 0 1rem 130px' },
-          }}>
-            <a href='#our-story'>
-              <Button variant='contained'>
-                Explore
-              </Button>
-            </a>
-
-          </Box>
         </div>
       </Box>
     </Box>
