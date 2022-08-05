@@ -163,7 +163,7 @@ export const JoinUs: FC = () => {
           <Box sx={{
             marginTop: 2
           }}>
-            <a href={'mailto:cgani@theouterkind.com'}>
+            <a href={'mailto:info@cairlinnbay.com'}>
               <Button color="primary" fullWidth variant={'contained'} onClick={handleSubmit}>CONTACT US</Button>
             </a>
           </Box>
