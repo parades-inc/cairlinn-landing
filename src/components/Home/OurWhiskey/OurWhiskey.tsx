@@ -9,9 +9,9 @@ const images = [
   pots, whiskeyField, barrels, pots, whiskeyField, barrels
 ];
 
-export const OurWhisky: FC = () => {
+export const OurWhiskey: FC = () => {
   return (
-    <Box id={'our-whisky'}>
+    <Box id={'our-whiskey'}>
       <Grid container sx={{
         overflowX: 'scroll',
         display: 'flex',

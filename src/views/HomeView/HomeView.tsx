@@ -7,14 +7,14 @@ import { JoinUs } from '../../components/Home/JoinUs/JoinUs';
 import './home.css';
 import { AgeDialog } from '../../components/AgeDialog/AgeDialog';
 import {ImageHero} from '../../components/Home/Hero/ImageHero';
-import {OurWhisky} from '../../components/Home/OurWhisky/OurWhisky';
+import {OurWhiskey} from '../../components/Home/OurWhiskey/OurWhiskey';
 export const HomeView: FC = () => {
   return (
     <div id='home'>
       <AgeDialog/>
       <ImageHero/>
       <Hero/>
-      <OurWhisky/>
+      <OurWhiskey/>
       <OurStory/>
       <About/>
       <News/>
