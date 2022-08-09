@@ -23,7 +23,6 @@ export const ImageHero: FC = () => {
         sx={{
           borderRadius: { sm: '16px' },
           zIndex: -10,
-
         }}
       />
       <div className='hero-text' style={{
