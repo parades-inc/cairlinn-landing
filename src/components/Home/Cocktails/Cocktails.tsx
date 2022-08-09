@@ -23,9 +23,12 @@ export const Cocktails: FC = () => {
           padding: { xs: '33px' }
         }}>
           <Typography variant={'h5'} sx={{
-            padding: '20px'
+            marginBottom: '5px'
           }}>
-            Old Fashioned
+            Cairlinn Bay Old Fashioned
+          </Typography>
+          <Typography variant={'body1'}>
+            An Irish twist on a true classic that delivers each and every time
           </Typography>
           <Box
             component={'img'}
@@ -39,8 +42,9 @@ export const Cocktails: FC = () => {
               listStyle: 'none',
               padding: '0'
             }}>
-              <li>CB Whiskey Sugar</li>
-              <li>Angostura Bitters Water</li>
+              <li>2 ounces Cairlinn Bay Oak & Coast Irish Whiskey</li>
+              <li>1/4 ounce of Simple Syrup</li>
+              <li>2 Dashes Angostura Bitters</li>
               <li>Orange Peel</li>
             </ul>
           </Typography>
@@ -49,9 +53,12 @@ export const Cocktails: FC = () => {
           padding: { xs: '33px' }
         }} alignSelf={'flex-end'}>
           <Typography variant={'h5'} sx={{
-            padding: '20px'
+            marginBottom: '5px'
           }}>
-            Irish Boulevardier
+            The Irish Boulevardier
+          </Typography>
+          <Typography variant={'body1'}>
+            A bold and delightfully complex cocktail that satisfies any palate.
           </Typography>
           <Box
             component={'img'}
@@ -66,9 +73,9 @@ export const Cocktails: FC = () => {
               listStyle: 'none',
               padding: '0'
             }}>
-              <li>CB Whiskey</li>
-              <li>Campari</li>
-              <li>Sweet Vermouth</li>
+              <li>2 ounces CB Whiskey</li>
+              <li>1 ounces Campari</li>
+              <li>1 ounces Sweet Vermouth</li>
               <li>Orange Peel</li>
             </ul>
           </Typography>
@@ -77,9 +84,12 @@ export const Cocktails: FC = () => {
           padding: { xs: '33px' }
         }}>
           <Typography variant={'h5'} sx={{
-            padding: '20px'
+            marginBottom: '5px'
           }}>
             The Pioneer
+          </Typography>
+          <Typography variant={'body1'}>
+            A refreshing cocktail with three simple ingredients that make it easy to replicate at home
           </Typography>
           <Box
             component={'img'}
@@ -93,8 +103,8 @@ export const Cocktails: FC = () => {
               listStyle: 'none',
               padding: '0'
             }}>
-              <li>CB Whiskey</li>
-              <li>Ginger Ale</li>
+              <li>2 ounces CB Whiskey</li>
+              <li>5 ounces Ginger Ale</li>
               <li>Lime Wedge</li>
             </ul>
           </Typography>
