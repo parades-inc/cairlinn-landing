@@ -71,6 +71,7 @@ export const OurWhiskey: FC = () => {
                 src={imageData.image}
                 sx={{
                   width: '100%',
+                  borderRadius: '16px'
                 }}
               />
               <Typography variant={'h3'} sx={{
@@ -92,6 +93,7 @@ export const OurWhiskey: FC = () => {
             src={whiskyTableGlasses}
             sx={{
               width: '100%',
+              borderRadius: '16px'
             }}
           />
           <Typography variant={'h3'}>
