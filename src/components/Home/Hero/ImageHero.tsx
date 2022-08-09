@@ -1,7 +1,7 @@
 import {FC} from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import marqueeImage from '../../../assets/images/marquee.png';
+import marqueeImage from '../../../assets/images/whiskey_table.jpg';
 import {Box, Button, Typography} from '@mui/material';
 
 
