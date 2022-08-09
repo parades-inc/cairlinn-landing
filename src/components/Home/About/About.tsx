@@ -16,7 +16,7 @@ export const About: FC = () => {
         maxWidth: '1440px',
         margin: '0 auto'
       }}>
-        <Typography variant='h1'>
+        <Typography variant='h2'>
           Authentic<br/>
           Approachable Irish<br/>
           Whiskey<br/>

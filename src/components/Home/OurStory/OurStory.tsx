@@ -5,6 +5,9 @@ import latitude from '../../../assets/images/coords_latitude.png';
 import waves from '../../../assets/images/wave-lines.png';
 import './ourStory.css';
 import {Box, Grid, Typography} from '@mui/material';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import heroVideo from '../../../assets/videos/hero-video.mp4';
 
 
 export const OurStory: FC = () => {
@@ -14,14 +17,14 @@ export const OurStory: FC = () => {
       backgroundPosition: 'bottom',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      marginTop: { xs: '150px' },
-      marginBottom: { xs: '150px' }
+      marginTop: { xs: '100px' },
+      marginBottom: { xs: '100px' }
     }}>
       <Box
         component="img"
         sx={{
           position: 'absolute',
-          marginTop: { xs: '50px', md: '100px'},
+          marginTop: { xs: '-50px'},
           left: { xs: '18px', md: '37px'},
           height: { xs: '25%', md: '45%'}
         }}
@@ -34,51 +37,59 @@ export const OurStory: FC = () => {
           margin: '0 auto'
         }}
       >
-        <Grid container justifyContent={'center'} alignItems={'center'} spacing={4}>
-          <Grid item xs={10} md={5} sx={{
-            display: { xs: 'none', md: 'flex'}
+        <Box sx={{
+          position: 'relative'
+        }}>
+          <Box component={'video'} autoPlay playsInline muted loop sx={{
+            borderRadius: { sm: '16px' },
+            zIndex: -10,
+            maxWidth: { xs: '1440px' },
           }}>
-            <Box
-              component="img"
-              sx={{
-                maxWidth: { xs: '100%'},
-              }}
-              alt="Whisky Bottle Coastline"
-              src={whiskeyCoast}
-            />
-          </Grid>
-          <Grid item xs={8} md={6}>
-            <Box className='content'>
-              <Typography variant='h1'>
-                Our<br/>
-                Story<br/>
-              </Typography>
-              <Typography variant={'body1'}>
-                We believe our whiskey should not be bound by rules and regulations or shackled to history and convention.
-                <br/>
-                <br/>
-                Our whiskey comes from the originality of the people who make it and the people who drink it. True to the Irish spirit that the future holds more than the past and that anything is possible.
-                <br/>
-                <br/>
-                We are proud of our traditions right enough, but we are driven to build on them, looking for ways to craft whiskey that is inspiring, diverse and above all enjoyable.
-                <br/>
-                <br/>
-                Ours is a pioneering Irish spirit.
-              </Typography>
-            </Box>
-            <Box
-              component="img"
-              sx={{
-                position: 'absolute',
-                marginTop: { xs: '50px', md: '100px'},
-                height: { xs: '50px', md: '80px'},
-                right: { xs: '18px', md: '37px'},
-              }}
-              alt="The house from the offer."
-              src={latitude}
-            />
-          </Grid>
-        </Grid>
+            <source src={heroVideo} type="video/mp4"/>
+          </Box>
+          <Box sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)'
+          }}>
+            <Typography variant='h1' sx={{
+            }}>
+              Our Story
+            </Typography>
+          </Box>
+        </Box>
+        <div className='hero-text' style={{
+          position: 'relative',
+          height: '100%',
+        }}>
+          <Typography variant='h5' sx={{
+            display: 'flex',
+            padding: { xs: '2rem', md: '4rem' },
+            fontSize: { xs: '20px', sm: '25px', md: '35px' },
+          }}>
+            We believe our whiskey should not be bound by rules and regulations or shackled to history and convention.
+            <br/>
+            <br/>
+            Our whiskey comes from the originality of the people who make it and the people who drink it. True to the Irish spirit that the future holds more than the past and that anything is possible.
+            <br/>
+            <br/>
+            We are proud of our traditions right enough, but we are driven to build on them, looking for ways to craft whiskey that is inspiring, diverse and above all enjoyable.
+            <br/>
+            <br/>
+            Ours is a pioneering Irish spirit.
+          </Typography>
+        </div>
+        <Box
+          component="img"
+          sx={{
+            position: 'absolute',
+            height: { xs: '50px', md: '80px'},
+            right: { xs: '18px', md: '37px'},
+          }}
+          alt="The house from the offer."
+          src={latitude}
+        />
       </Box>
     </Box>
   );

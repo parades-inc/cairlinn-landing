@@ -2,6 +2,7 @@
   "name": "cairlinn-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gula-app-studios.github.io/cairlinn-landing",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -36,7 +37,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint 'src/*.tsx' 'src/**/**.ts'",
     "lint:fix": "eslint --fix 'src/**/**.tsx' 'src/**/**.ts'",
-    "deploy": "yarn build && netlify deploy --prod --dir './build'",
+    "deploy:netlify": "npm run build && netlify deploy --prod --dir './build'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "save": "git add . && git commit -m \"adjustments\" && git push origin working"
   },
   "eslintConfig": {
@@ -58,6 +61,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-import-resolver-typescript": "^2.5.0"
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "gh-pages": "^4.0.0"
   }
 }
