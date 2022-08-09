@@ -13,7 +13,6 @@ export const HomeView: FC = () => {
     <div id='home'>
       <AgeDialog/>
       <ImageHero/>
-      <Hero/>
       <OurStory/>
       <OurWhiskey/>
       <Cocktails/>

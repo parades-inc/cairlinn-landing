@@ -1,7 +1,10 @@
 import {FC} from 'react';
+import sunsetField from '../../../assets/images/sunset-field.jpg';
 import pots from '../../../assets/images/pots.png';
-import whiskeyField from '../../../assets/images/field-whiskey.png';
-import barrels from '../../../assets/images/barrels.png';
+import barrelFire from '../../../assets/images/barrel-fire.jpg';
+import barrelsStack from '../../../assets/images/barrels-stack.jpg';
+import whiskyTableRope from '../../../assets/images/whisky-table-rope.png';
+import whiskyTableGlasses from '../../../assets/images/whisky-table-glasses.png';
 import './ourWhisky.css';
 import {Box, Grid, Typography} from '@mui/material';
 
@@ -13,28 +16,28 @@ type ImageData = {
 
 const images: ImageData[] = [
   {
-    image: pots,
+    image: sunsetField,
     title: 'The Whiskey',
     body: 'Irish Single Grain is the backbone of our whiskey, and is distilled in our column stills – “After all they were invented by an Irishman, Aeneas Coffey circa 1830”'
   },
   {
-    image: whiskeyField,
+    image: pots,
     title: 'The Process',
     body: '“The Irish Pot Still is Ireland’s greatest gift to the whiskey world” This uniquely Irish triple distillation process in well worn copper pot stills yields an amazing nectar that is ultra smooth and creamy.'
   },
   {
-    image: barrels,
+    image: barrelFire,
     title: 'The Wood',
     body: 'We age our whiskey in heavily toasted virgin oak barrels, which imparts the delicious buttery vanilla caramel notes into our whiskey.'
   },
   {
-    image: pots,
+    image: barrelsStack,
     title: 'The Finish',
     body: 'We have casks to finish our whiskies from all over the world. Casks used to age Beer, Rum, Bourbon, Rye, Wines, and a lot more. This is\n' +
       'where our craft reigns supreme, and we pick the truly exceptional ones to bring to you.'
   },
   {
-    image: whiskeyField,
+    image: whiskyTableRope,
     title: 'The Blend',
     body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies'
   }
@@ -86,7 +89,7 @@ export const OurWhiskey: FC = () => {
         }}>
           <Box
             component={'img'}
-            src={barrels}
+            src={whiskyTableGlasses}
             sx={{
               width: '100%',
             }}

@@ -2,7 +2,9 @@ import {FC} from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import heroVideo from '../../../assets/videos/hero-video.mp4';
-import {Box, Button, Typography} from '@mui/material';
+import {Box, Typography} from '@mui/material';
+import longitude from '../../../assets/images/coords_longitude.png';
+import latitude from '../../../assets/images/coords_latitude.png';
 
 
 
@@ -11,6 +13,17 @@ export const Hero: FC = () => {
     <Box id='hero' sx={{
       marginTop: '4rem'
     }}>
+      <Box
+        component="img"
+        sx={{
+          position: 'absolute',
+          marginTop: { xs: '50px', md: '100px'},
+          left: { xs: '18px', md: '37px'},
+          height: { xs: '25%', md: '45%'}
+        }}
+        alt="The house from the offer."
+        src={longitude}
+      />
       <Box sx={{
         position: 'relative'
       }}>
@@ -54,6 +67,17 @@ export const Hero: FC = () => {
           Ours is a pioneering Irish spirit.
         </Typography>
       </div>
+      <Box
+        component="img"
+        sx={{
+          position: 'absolute',
+          marginTop: { xs: '50px', md: '100px'},
+          height: { xs: '50px', md: '80px'},
+          right: { xs: '18px', md: '37px'},
+        }}
+        alt="The house from the offer."
+        src={latitude}
+      />
     </Box>
   );
 };
