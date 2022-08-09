@@ -26,14 +26,9 @@ export const News: FC = () => {
               News
             </Typography>
             <Typography variant='body1'>
-              Perhaps you want to talk about the timeline here, can put background photo on this if not too distracting.
+              Cairlinn Bay Oak & Coast achieves “Excellent, Highly Recommended” score of 93 by Ultimate Spirits Challenge. (Hyperlink embedded to USC site)
+              Oak & Coast available Summer 2022
             </Typography>
-            <ul>
-              <li><Typography variant='body1'>Launch Dates</Typography></li>
-              <li><Typography variant='body1'>Rollout Information</Typography></li>
-              <li><Typography variant='body1'>Merch</Typography></li>
-              <li><Typography variant='body1'>Links to other documents or sponsors</Typography></li>
-            </ul>
             <Box py={6}>
               <a href={'https://www.instagram.com/cairlinnbay/'} target={'_blank'} rel="noreferrer" >
                 <Button variant='contained'>

@@ -70,7 +70,7 @@ export const JoinUs: FC = () => {
       <Box className="join-us-container" sx={{
         overflow: 'hidden',
         display: 'flex',
-        justifyContent: { xs: 'center', md: 'flex-end'},
+        justifyContent: { xs: 'flex-start', md: 'flex-start'},
         alignItems: 'center',
         backgroundColor: { xs: '#2C2A27', md: 'rgba(0,0,0,0)' },
         maxWidth: { xs: 'calc(100% - 50px)', xl: '100%' },
@@ -85,7 +85,6 @@ export const JoinUs: FC = () => {
             display: { xs: 'none', md: 'block' },
             position: 'absolute',
             zIndex: -10,
-
             maxWidth: { xs: '100%', sm: 'calc(100% - 50px)', xl: '1440px' },
             borderRadius: '16px',
           }}
@@ -97,7 +96,7 @@ export const JoinUs: FC = () => {
           height: '100%',
           width: { xs: '70%', md: '40%', lg: '30%' },
           textAlign: 'center',
-          marginRight: { xs: 0, md: '260px' },
+          marginLeft: { xs: 0, md: '100px' },
         }}>
           { !submitState ? (
             <>
