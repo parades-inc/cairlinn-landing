@@ -6,7 +6,14 @@ import {Box, Grid, Typography} from '@mui/material';
 
 export const Cocktails: FC = () => {
   return (
-    <Box id={'our-cocktails'}>
+    <Box id={'our-cocktails'} sx={{
+      margin: '100px 0'
+    }}>
+      <Typography variant={'h1'} sx={{
+        textAlign: 'center'
+      }}>
+        Our Cocktails
+      </Typography>
       <Grid container sx={{
         overflowX: 'scroll',
         display: 'flex',
