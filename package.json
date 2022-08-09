@@ -2,6 +2,7 @@
   "name": "cairlinn-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cairlinnbay.com",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -19,6 +20,7 @@
     "axios": "^0.25.0",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.28.0",
+    "gh-pages": "^4.0.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-cookie": "^4.1.1",
@@ -36,7 +38,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint 'src/*.tsx' 'src/**/**.ts'",
     "lint:fix": "eslint --fix 'src/**/**.tsx' 'src/**/**.ts'",
-    "deploy": "yarn build && netlify deploy --prod --dir './build'",
+    "deploy:netlify": "yarn build && netlify deploy --prod --dir './build'",
+    "deploy": "gh-pages -d build",
     "save": "git add . && git commit -m \"adjustments\" && git push origin working"
   },
   "eslintConfig": {
