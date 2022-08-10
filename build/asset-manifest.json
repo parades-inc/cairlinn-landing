@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cairlinn-landing/static/css/main.53858175.chunk.css",
-    "main.js": "/cairlinn-landing/static/js/main.2aebad95.chunk.js",
-    "main.js.map": "/cairlinn-landing/static/js/main.2aebad95.chunk.js.map",
+    "main.js": "/cairlinn-landing/static/js/main.52f9da76.chunk.js",
+    "main.js.map": "/cairlinn-landing/static/js/main.52f9da76.chunk.js.map",
     "runtime-main.js": "/cairlinn-landing/static/js/runtime-main.97b26b2f.js",
     "runtime-main.js.map": "/cairlinn-landing/static/js/runtime-main.97b26b2f.js.map",
-    "static/js/2.5651c9cc.chunk.js": "/cairlinn-landing/static/js/2.5651c9cc.chunk.js",
-    "static/js/2.5651c9cc.chunk.js.map": "/cairlinn-landing/static/js/2.5651c9cc.chunk.js.map",
+    "static/js/2.31c852b7.chunk.js": "/cairlinn-landing/static/js/2.31c852b7.chunk.js",
+    "static/js/2.31c852b7.chunk.js.map": "/cairlinn-landing/static/js/2.31c852b7.chunk.js.map",
     "index.html": "/cairlinn-landing/index.html",
     "static/css/main.53858175.chunk.css.map": "/cairlinn-landing/static/css/main.53858175.chunk.css.map",
-    "static/js/2.5651c9cc.chunk.js.LICENSE.txt": "/cairlinn-landing/static/js/2.5651c9cc.chunk.js.LICENSE.txt",
+    "static/js/2.31c852b7.chunk.js.LICENSE.txt": "/cairlinn-landing/static/js/2.31c852b7.chunk.js.LICENSE.txt",
     "static/media/CairlinnBayLogo.b9ad0fae.png": "/cairlinn-landing/static/media/CairlinnBayLogo.b9ad0fae.png",
     "static/media/App.css": "/cairlinn-landing/static/media/CitrusGothic-Regular.024f2c1d.ttf",
     "static/media/barrel-fire.c983b9e6.jpg": "/cairlinn-landing/static/media/barrel-fire.c983b9e6.jpg",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.97b26b2f.js",
-    "static/js/2.5651c9cc.chunk.js",
+    "static/js/2.31c852b7.chunk.js",
     "static/css/main.53858175.chunk.css",
-    "static/js/main.2aebad95.chunk.js"
+    "static/js/main.52f9da76.chunk.js"
   ]
 }

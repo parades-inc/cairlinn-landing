@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import './index.css';
 import App from './App';
@@ -12,9 +12,9 @@ ReactDOM.render(
   <>
     <CssBaseline/>
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   </>,
   document.getElementById('root')
