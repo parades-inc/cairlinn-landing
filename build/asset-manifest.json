@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/cairlinn-landing/static/css/main.53858175.chunk.css",
+    "main.js": "/cairlinn-landing/static/js/main.2aebad95.chunk.js",
+    "main.js.map": "/cairlinn-landing/static/js/main.2aebad95.chunk.js.map",
+    "runtime-main.js": "/cairlinn-landing/static/js/runtime-main.97b26b2f.js",
+    "runtime-main.js.map": "/cairlinn-landing/static/js/runtime-main.97b26b2f.js.map",
+    "static/js/2.5651c9cc.chunk.js": "/cairlinn-landing/static/js/2.5651c9cc.chunk.js",
+    "static/js/2.5651c9cc.chunk.js.map": "/cairlinn-landing/static/js/2.5651c9cc.chunk.js.map",
+    "index.html": "/cairlinn-landing/index.html",
+    "static/css/main.53858175.chunk.css.map": "/cairlinn-landing/static/css/main.53858175.chunk.css.map",
+    "static/js/2.5651c9cc.chunk.js.LICENSE.txt": "/cairlinn-landing/static/js/2.5651c9cc.chunk.js.LICENSE.txt",
+    "static/media/CairlinnBayLogo.b9ad0fae.png": "/cairlinn-landing/static/media/CairlinnBayLogo.b9ad0fae.png",
+    "static/media/App.css": "/cairlinn-landing/static/media/CitrusGothic-Regular.024f2c1d.ttf",
+    "static/media/barrel-fire.c983b9e6.jpg": "/cairlinn-landing/static/media/barrel-fire.c983b9e6.jpg",
+    "static/media/barrels-stack.668cc682.jpg": "/cairlinn-landing/static/media/barrels-stack.668cc682.jpg",
+    "static/media/coords_latitude.aca6dfc1.png": "/cairlinn-landing/static/media/coords_latitude.aca6dfc1.png",
+    "static/media/coords_longitude.597fdfe0.png": "/cairlinn-landing/static/media/coords_longitude.597fdfe0.png",
+    "static/media/hero-video.5751c159.mp4": "/cairlinn-landing/static/media/hero-video.5751c159.mp4",
+    "static/media/instagram_icon.a7a31e48.png": "/cairlinn-landing/static/media/instagram_icon.a7a31e48.png",
+    "static/media/irish-boulevardier.646e7147.png": "/cairlinn-landing/static/media/irish-boulevardier.646e7147.png",
+    "static/media/joinUsImage.4e61f85a.jpg": "/cairlinn-landing/static/media/joinUsImage.4e61f85a.jpg",
+    "static/media/old-fashioned.b8b59f79.png": "/cairlinn-landing/static/media/old-fashioned.b8b59f79.png",
+    "static/media/pots.f0c2ff3c.png": "/cairlinn-landing/static/media/pots.f0c2ff3c.png",
+    "static/media/social-media.6825196f.png": "/cairlinn-landing/static/media/social-media.6825196f.png",
+    "static/media/sunset-field.4beca57f.jpg": "/cairlinn-landing/static/media/sunset-field.4beca57f.jpg",
+    "static/media/the-pioneer.c879e078.png": "/cairlinn-landing/static/media/the-pioneer.c879e078.png",
+    "static/media/wave-lines.812bf75e.png": "/cairlinn-landing/static/media/wave-lines.812bf75e.png",
+    "static/media/whiskey_table.5e500147.jpg": "/cairlinn-landing/static/media/whiskey_table.5e500147.jpg",
+    "static/media/whisky-table-glasses.838c0479.png": "/cairlinn-landing/static/media/whisky-table-glasses.838c0479.png",
+    "static/media/whisky-table-rope.c5bc05a6.png": "/cairlinn-landing/static/media/whisky-table-rope.c5bc05a6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97b26b2f.js",
+    "static/js/2.5651c9cc.chunk.js",
+    "static/css/main.53858175.chunk.css",
+    "static/js/main.2aebad95.chunk.js"
+  ]
+}
