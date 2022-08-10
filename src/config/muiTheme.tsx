@@ -16,7 +16,12 @@ export const theme = createTheme({
       padding: 0,
     },
     h1: {
-      fontSize: '5rem'
+      xs: {
+        fontSize: 24
+      },
+      lg: {
+        fontSize: 48
+      }
     }
   },
   components: {
