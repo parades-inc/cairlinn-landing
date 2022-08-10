@@ -8,7 +8,6 @@ import joinUsImage from '../../../assets/images/joinUsImage.jpg';
 import {Box, Button, FormControl, Input, Typography} from '@mui/material';
 import { TextField } from '@mui/material';
 import axios from 'axios';
-import waves from '../../../assets/images/wave-lines.png';
 
 interface CustomProps {
   onChange: (event: { target: { name: string; value: string } }) => void;
@@ -16,7 +15,7 @@ interface CustomProps {
 }
 
 const TextMaskCustom = React.forwardRef<HTMLElement, CustomProps>(
-  function TextMaskCustom(props, ref) {
+  function TextMaskCustom(props) {
     const { onChange, ...other } = props;
     return (
       <IMaskInput
@@ -25,7 +24,6 @@ const TextMaskCustom = React.forwardRef<HTMLElement, CustomProps>(
         definitions={{
           '#': /[0-9]/,
         }}
-        inputRef={ref}
         onAccept={(value: any) => onChange({ target: { name: props.name, value } })}
         overwrite
       />
@@ -64,8 +62,7 @@ export const JoinUs: FC = () => {
 
   return (
     <Box id='joinUs' sx={{
-      marginTop: { xs: '50px', sm: '75px', md: '150px', lg: '00px' },
-      marginBottom: { xs: '50px', sm: '75px', md: '150px', lg: '300px' },
+      margin: '100px 0'
     }}>
       <Box className="join-us-container" sx={{
         display: 'flex',

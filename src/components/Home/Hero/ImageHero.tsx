@@ -3,7 +3,7 @@ import {FC} from 'react';
 // @ts-ignore
 import marqueeImage from '../../../assets/images/whiskey_table.jpg';
 import {Box, Button, Typography} from '@mui/material';
-
+import { HashLink } from 'react-router-hash-link';
 
 
 export const ImageHero: FC = () => {
@@ -21,16 +21,16 @@ export const ImageHero: FC = () => {
         component='img'
         src={marqueeImage}
         sx={{
-          borderRadius: { sm: '16px' },
+          borderRadius: { xs: '16px' },
           zIndex: -10,
           maxWidth: { xs: '90vw', xl: '1440px' },
           margin: 'auto'
         }}
       />
-      <div className='hero-text' style={{
+      <Box className='hero-text' sx={{
         position: 'absolute',
         maxWidth: '1440px',
-        left: '8rem'
+        left: { xs: '2rem', lg: '8rem' }
       }}>
         <Typography variant='h1' sx={{
           display: 'flex',
@@ -43,13 +43,13 @@ export const ImageHero: FC = () => {
           display: 'flex',
           marginTop: '20px'
         }}>
-          <a href='#our-story'>
+          <HashLink to='/#our-story'>
             <Button variant='contained'>
               Explore
             </Button>
-          </a>
+          </HashLink>
         </Box>
-      </div>
+      </Box>
     </Box>
   );
 };

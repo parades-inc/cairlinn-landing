@@ -11,13 +11,14 @@ import heroVideo from '../../../assets/videos/hero-video.mp4';
 
 
 export const OurStory: FC = () => {
+
   return (
     <Box id='our-story' sx={{
       backgroundImage: `url(${waves})`,
       backgroundPosition: 'bottom',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      marginTop: { xs: '100px' },
+      marginTop: { xs: '150px' },
       marginBottom: { xs: '100px' }
     }}>
       <Box
@@ -45,7 +46,7 @@ export const OurStory: FC = () => {
           justifyContent: 'center'
         }}>
           <Box component={'video'} autoPlay playsInline muted loop sx={{
-            borderRadius: { sm: '16px' },
+            borderRadius: { xs: '16px' },
             zIndex: 0,
             maxWidth: { xs: '80vw', xl: '1440px' },
             margin: '0 auto',

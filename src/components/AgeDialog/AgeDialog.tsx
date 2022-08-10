@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, ReactElement, useEffect, useRef, useState} from 'react';
 import {
   Box,
   Button,
@@ -21,9 +21,10 @@ interface CustomProps {
   name: string;
 }
 
-const TextMaskCustom = React.forwardRef<HTMLElement, CustomProps>(
-  function TextMaskCustom(props, ref) {
+const TextMaskCustom = React.forwardRef<ReactElement, CustomProps>(
+  function TextMaskCustom(props) {
     const { onChange, ...other } = props;
+    // const ref2 = useRef()
     return (
       <IMaskInput
         {...other}
@@ -31,7 +32,6 @@ const TextMaskCustom = React.forwardRef<HTMLElement, CustomProps>(
         definitions={{
           '#': /[0-9]/,
         }}
-        inputRef={ref}
         onAccept={(value: any) => onChange({ target: { name: props.name, value } })}
         overwrite
       />

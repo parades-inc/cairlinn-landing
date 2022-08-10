@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import {FC} from 'react';
 import logo from '../../assets/images/CairlinnBayLogo.png';
 import './header.css';
+import {HashLink} from 'react-router-hash-link';
 
 
 export const Header: FC = () => {
@@ -26,27 +27,27 @@ export const Header: FC = () => {
           />
         </Box>
         <Box display={'flex'} alignItems={'flex-end'}>
-          <a href='#our-story'>
+          <HashLink to='/#our-story'>
             <Button>Our Story</Button>
-          </a>
-          <a href='#our-whiskey'>
+          </HashLink>
+          <HashLink to='/#our-whiskey'>
             <Button>Our Whiskey</Button>
-          </a>
-          <a href='#our-cocktails'>
+          </HashLink>
+          <HashLink to='/#our-cocktails'>
             <Button>Our Cocktails</Button>
-          </a>
+          </HashLink>
           <Box className={'pipe-spacer'} sx={{
             width: '1px',
             height: '100%',
             background: '#FAF7ED',
             opacity: 0.2
           }}/>
-          <a href='#news'>
+          <HashLink to='/#news'>
             <Button>News</Button>
-          </a>
-          <a href='#joinUs'>
+          </HashLink>
+          <HashLink to='/#joinus'>
             <Button color='primary' variant={'contained'}>Join Us</Button>
-          </a>
+          </HashLink>
         </Box>
       </Toolbar>
     </header>

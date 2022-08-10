@@ -1,6 +1,7 @@
 import createTheme from '@mui/material/styles/createTheme';
+import {responsiveFontSizes} from '@mui/material';
 
-export const theme = createTheme({
+export let theme = createTheme({
   palette: {
     primary: {
       main: '#327371',
@@ -16,7 +17,7 @@ export const theme = createTheme({
       padding: 0,
     },
     h1: {
-      fontSize: '5rem'
+
     }
   },
   components: {
@@ -55,3 +56,5 @@ export const theme = createTheme({
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
