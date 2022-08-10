@@ -27,10 +27,10 @@ export const ImageHero: FC = () => {
           margin: 'auto'
         }}
       />
-      <div className='hero-text' style={{
+      <Box className='hero-text' sx={{
         position: 'absolute',
         maxWidth: '1440px',
-        left: '8rem'
+        left: { xs: '2rem', lg: '8rem' }
       }}>
         <Typography variant='h1' sx={{
           display: 'flex',
@@ -49,7 +49,7 @@ export const ImageHero: FC = () => {
             </Button>
           </HashLink>
         </Box>
-      </div>
+      </Box>
     </Box>
   );
 };
