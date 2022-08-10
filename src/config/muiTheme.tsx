@@ -16,12 +16,7 @@ export const theme = createTheme({
       padding: 0,
     },
     h1: {
-      '@media (max-width: 900px)': {
-        fontSize: 60
-      },
-      '@media (max-width: 600px)': {
-        fontSize: 40
-      },
+      fontSize: '5rem'
     }
   },
   components: {

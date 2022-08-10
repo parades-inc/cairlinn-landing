@@ -13,7 +13,7 @@ export const ImageHero: FC = () => {
       display: 'flex',
       position: 'relative',
       alignItems: 'center',
-      maxWidth: { xs: '100%', xl: '1440px' },
+      maxWidth: { xs: '90vw', xl: '1440px' },
       marginLeft: 'auto',
       marginRight: 'auto',
     }}>
@@ -23,6 +23,8 @@ export const ImageHero: FC = () => {
         sx={{
           borderRadius: { sm: '16px' },
           zIndex: -10,
+          maxWidth: { xs: '90vw', xl: '1440px' },
+          margin: 'auto'
         }}
       />
       <div className='hero-text' style={{

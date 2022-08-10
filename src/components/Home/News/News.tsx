@@ -8,7 +8,7 @@ import waves from '../../../assets/images/wave-lines.png';
 export const News: FC = () => {
   return (
     <Box id='news' sx={{
-      margin: { xs: '0 0px' },
+      margin: { xs: '0 0px', md: '100px' },
       padding: { xs: '0', md: '0' },
       backgroundImage: `url(${waves})`,
       backgroundPosition: 'bottom',
@@ -25,14 +25,17 @@ export const News: FC = () => {
             <Typography variant='h1'>
               News
             </Typography>
-            <Typography variant='body1'>
-              Cairlinn Bay Oak & Coast achieves “Excellent, Highly Recommended” score of 93 by Ultimate Spirits Challenge. (Hyperlink embedded to USC site)
-              Oak & Coast available Summer 2022
+            <Typography variant='h5' sx={{
+              marginTop: '20px',
+              marginBottom: '40px'
+            }}>
+              Cairlinn Bay Oak & Coast achieves “Excellent, Highly Recommended” score of 93 by Ultimate Spirits Challenge.
             </Typography>
+            <Typography variant='h4'>Available Summer 2022</Typography>
             <Box py={6}>
               <a href={'https://www.instagram.com/cairlinnbay/'} target={'_blank'} rel="noreferrer" >
                 <Button variant='contained'>
-                  Join Instagram
+                  Follow Us On Instagram
                 </Button>
               </a>
             </Box>

@@ -1,10 +1,10 @@
 import {FC} from 'react';
-import sunsetField from '../../../assets/images/sunset-field.jpg';
-import pots from '../../../assets/images/pots.png';
+import sunsetField from '../../../assets/images/sunset-field-sized.jpg';
+import pots from '../../../assets/images/the-whiskey-sized.jpg';
 import barrelFire from '../../../assets/images/barrel-fire.jpg';
 import barrelsStack from '../../../assets/images/barrels-stack.jpg';
 import whiskyTableRope from '../../../assets/images/whisky-table-rope.png';
-import whiskyTableGlasses from '../../../assets/images/whisky-table-glasses.png';
+import whiskyTableGlasses from '../../../assets/images/tasting-notes.jpg';
 import './ourWhisky.css';
 import {Box, Grid, Typography} from '@mui/material';
 

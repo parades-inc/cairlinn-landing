@@ -64,17 +64,15 @@ export const JoinUs: FC = () => {
 
   return (
     <Box id='joinUs' sx={{
-      marginTop: { xs: '50px', sm: '75px', md: '150px', lg: '400px' },
+      marginTop: { xs: '50px', sm: '75px', md: '150px', lg: '00px' },
       marginBottom: { xs: '50px', sm: '75px', md: '150px', lg: '300px' },
     }}>
       <Box className="join-us-container" sx={{
-        overflow: 'hidden',
         display: 'flex',
-        justifyContent: { xs: 'flex-start', md: 'flex-start'},
+        justifyContent: { xs: 'center' },
         alignItems: 'center',
         backgroundColor: { xs: '#2C2A27', md: 'rgba(0,0,0,0)' },
-        maxWidth: { xs: 'calc(100% - 50px)', xl: '100%' },
-        textAlign: 'center',
+        maxWidth: { xs: '90vw', xl: '100%' },
         margin: '0 auto',
         borderRadius: '16px',
         padding: { xs: '50px 0', lg: 0 },
@@ -85,7 +83,7 @@ export const JoinUs: FC = () => {
             display: { xs: 'none', md: 'block' },
             position: 'absolute',
             zIndex: -10,
-            maxWidth: { xs: '100%', sm: 'calc(100% - 50px)', xl: '1440px' },
+            maxWidth: { xs: '90vw', xl: '1440px' },
             borderRadius: '16px',
           }}
           alt="The house from the offer."
@@ -94,9 +92,9 @@ export const JoinUs: FC = () => {
         <Box className={'join-us-content'} sx={{
           position: 'relative',
           height: '100%',
-          width: { xs: '70%', md: '40%', lg: '30%' },
           textAlign: 'center',
-          marginLeft: { xs: 0, md: '100px' },
+          padding: '10vw',
+          maxWidth: '80vw'
         }}>
           { !submitState ? (
             <>
@@ -104,7 +102,8 @@ export const JoinUs: FC = () => {
                 marginBottom: '25px'
               }}>
                 <Typography variant="h1">Join Us</Typography>
-              </Box><Box component={'form'}>
+              </Box>
+              <Box component={'form'}>
                 <FormControl fullWidth>
                   <TextField
                     placeholder="Email"
@@ -151,7 +150,7 @@ export const JoinUs: FC = () => {
             </>
           ) : (
             <Box sx={{
-              padding: '2rem',
+              padding: '10vw',
               backgroundColor: 'rgba(44, 42, 39, 0.6)',
               borderRadius: '16px'
             }}
