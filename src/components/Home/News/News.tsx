@@ -28,7 +28,18 @@ export const News: FC = () => {
               marginTop: '20px',
               marginBottom: '40px'
             }}>
-              Cairlinn Bay Oak & Coast achieves “Excellent, Highly Recommended” score of 93 by Ultimate Spirits Challenge.
+              Cairlinn Bay Oak & Coast achieves “Excellent, Highly Recommended” score of &nbsp;
+              <Box
+                component={'a'}
+                sx={{
+                  textDecoration: 'underline',
+                  color: '#327371 !important'
+                }}
+                target={'_blank'}
+                href={'https://www.ultimate-beverage.com/usc-2022/2022-spirits-results/Cairlinn-Bay-Oak-Coast-Irish-Blended-Whiskey/'}
+              >
+                93 by Ultimate Spirits Challenge
+              </Box>
             </Typography>
             <Typography variant='h4'>Available Summer 2022</Typography>
             <Box py={6}>

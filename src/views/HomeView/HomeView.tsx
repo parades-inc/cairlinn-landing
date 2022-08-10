@@ -11,7 +11,7 @@ import {Cocktails} from '../../components/Home/Cocktails/Cocktails';
 export const HomeView: FC = () => {
   return (
     <div id='home'>
-      {/*<AgeDialog/>*/}
+      <AgeDialog/>
       <ImageHero/>
       <OurStory/>
       <OurWhiskey/>

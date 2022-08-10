@@ -62,8 +62,7 @@ export const JoinUs: FC = () => {
 
   return (
     <Box id='joinUs' sx={{
-      marginTop: { xs: '50px', sm: '75px', md: '150px', lg: '00px' },
-      marginBottom: { xs: '50px', sm: '75px', md: '150px', lg: '300px' },
+      margin: '100px 0'
     }}>
       <Box className="join-us-container" sx={{
         display: 'flex',
