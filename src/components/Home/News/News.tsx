@@ -8,8 +8,7 @@ import waves from '../../../assets/images/wave-lines.png';
 export const News: FC = () => {
   return (
     <Box id='news' sx={{
-      margin: { xs: '0 0px', md: '100px' },
-      padding: { xs: '0', md: '0' },
+      padding: { xs: '100px 0' },
       backgroundImage: `url(${waves})`,
       backgroundPosition: 'bottom',
       backgroundRepeat: 'no-repeat',

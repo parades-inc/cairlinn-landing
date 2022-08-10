@@ -96,7 +96,9 @@ export const OurWhiskey: FC = () => {
               borderRadius: '16px'
             }}
           />
-          <Typography variant={'h3'}>
+          <Typography variant={'h3'} sx={{
+            marginTop: '20px'
+          }}>
             Tasting Notes
           </Typography>
           <Typography variant={'body1'}>
@@ -105,7 +107,6 @@ export const OurWhiskey: FC = () => {
             Taste: Elegant and soft, with toasted grains, candied fruit, and mild spice notes<br/>
             Finish: Ultra smooth and creamy with warm mild spice finish<br/>
             <br/>
-
           </Typography>
         </Grid>
       </Grid>
