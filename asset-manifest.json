@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.45e8b5f9.css",
+    "main.js": "/static/js/main.5f94390f.js",
+    "static/media/hero-video.mp4": "/static/media/hero-video.8d959b2e94b1b5ece96b.mp4",
+    "static/media/whisky-table-rope.png": "/static/media/whisky-table-rope.52fdebd5fdc953910976.png",
+    "static/media/tasting-notes.jpg": "/static/media/tasting-notes.e9e9b4bdbfd1eba355d0.jpg",
+    "static/media/barrel-fire.jpg": "/static/media/barrel-fire.1a1aa798c9e39a9eea29.jpg",
+    "static/media/barrels-stack.jpg": "/static/media/barrels-stack.6170d0b60dcf4a665ea5.jpg",
+    "static/media/irish-boulevardier.png": "/static/media/irish-boulevardier.29ef4b5fafde14e92390.png",
+    "static/media/social-media.png": "/static/media/social-media.6825196fcd816e129ac1.png",
+    "static/media/the-pioneer.png": "/static/media/the-pioneer.d7a6e352ac9be0a61727.png",
+    "static/media/joinUsImage.jpg": "/static/media/joinUsImage.4e61f85ad909bbacf566.jpg",
+    "static/media/sunset-field-sized.jpg": "/static/media/sunset-field-sized.7c03fa5ca710a2d49964.jpg",
+    "static/media/old-fashioned.png": "/static/media/old-fashioned.743f07effa4878148b8a.png",
+    "static/media/whiskey_table.jpg": "/static/media/whiskey_table.8ecfef661802eb8dda0b.jpg",
+    "static/media/the-whiskey-sized.jpg": "/static/media/the-whiskey-sized.de5a7d4c39c4dd364dc1.jpg",
+    "static/media/wave-lines.png": "/static/media/wave-lines.812bf75ec6b2b3d23215.png",
+    "static/media/CitrusGothic-Regular.ttf": "/static/media/CitrusGothic-Regular.024f2c1d79b5aaf7d51d.ttf",
+    "static/media/coords_latitude.png": "/static/media/coords_latitude.aca6dfc1de32ad5117f0.png",
+    "static/media/coords_longitude.png": "/static/media/coords_longitude.597fdfe029705a2cb681.png",
+    "static/media/CairlinnBayLogo.png": "/static/media/CairlinnBayLogo.b9ad0fae6bda17e50c16.png",
+    "static/media/instagram_icon.png": "/static/media/instagram_icon.a7a31e481a67ed6d0cca.png",
+    "index.html": "/index.html",
+    "main.45e8b5f9.css.map": "/static/css/main.45e8b5f9.css.map",
+    "main.5f94390f.js.map": "/static/js/main.5f94390f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45e8b5f9.css",
+    "static/js/main.5f94390f.js"
+  ]
+}
