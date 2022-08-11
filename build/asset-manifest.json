@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cairlinn-landing/static/css/main.7dfff212.css",
-    "main.js": "/cairlinn-landing/static/js/main.7e9ef2ac.js",
+    "main.js": "/cairlinn-landing/static/js/main.109d2876.js",
     "static/media/hero-video.mp4": "/cairlinn-landing/static/media/hero-video.8d959b2e94b1b5ece96b.mp4",
     "static/media/whisky-table-rope.png": "/cairlinn-landing/static/media/whisky-table-rope.52fdebd5fdc953910976.png",
     "static/media/tasting-notes.jpg": "/cairlinn-landing/static/media/tasting-notes.e9e9b4bdbfd1eba355d0.jpg",
@@ -23,10 +23,10 @@
     "static/media/instagram_icon.png": "/cairlinn-landing/static/media/instagram_icon.a7a31e481a67ed6d0cca.png",
     "index.html": "/cairlinn-landing/index.html",
     "main.7dfff212.css.map": "/cairlinn-landing/static/css/main.7dfff212.css.map",
-    "main.7e9ef2ac.js.map": "/cairlinn-landing/static/js/main.7e9ef2ac.js.map"
+    "main.109d2876.js.map": "/cairlinn-landing/static/js/main.109d2876.js.map"
   },
   "entrypoints": [
     "static/css/main.7dfff212.css",
-    "static/js/main.7e9ef2ac.js"
+    "static/js/main.109d2876.js"
   ]
 }
