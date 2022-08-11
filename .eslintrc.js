@@ -28,7 +28,8 @@ module.exports = {
   'rules': {
     'semi': ['warn', 'always'],
     'quotes': ['warn', 'single'],
-    'indent': ['error', 2],
+    'indent': ['warn', 2],
     'react/react-in-jsx-scope': 0,
+    'react/no-unescaped-entities': 0
   }
 };

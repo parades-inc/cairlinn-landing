@@ -1,7 +1,6 @@
 import {FC} from 'react';
-import whiskeyCoast from '../../../assets/images/whiskey-coast.png';
-import longitude from '../../../assets/images/coords_longitude.png';
-import latitude from '../../../assets/images/coords_latitude.png';
+import topLeftCords from '../../../assets/images/left-cords.png'
+import bottomRightCords from '../../../assets/images/bottom-right-coords.png'
 import waves from '../../../assets/images/wave-lines.png';
 import './ourStory.css';
 import {Box, Grid, Typography} from '@mui/material';
@@ -26,13 +25,12 @@ export const OurStory: FC = () => {
         sx={{
           position: 'absolute',
           marginTop: { xs: '0px'},
-          left: { xs: '18px', md: '37px'},
-          height: { xs: '25%', md: '25%'},
-          maxWidth: { xs: '90vw', xl: '1440px' },
+          left: { xs: '0', xl: 'calc((100vw - 1440px) / 10)'},
+          width: { xs: '50px', xl: '80px'},
           zIndex: -10
         }}
         alt=""
-        src={longitude}
+        src={topLeftCords}
       />
       <Box className={'our-story-container'}
         sx={{
@@ -100,7 +98,7 @@ export const OurStory: FC = () => {
             right: { xs: '18px', md: '37px'},
           }}
           alt="The house from the offer."
-          src={latitude}
+          src={bottomRightCords}
         />
       </Box>
     </Box>

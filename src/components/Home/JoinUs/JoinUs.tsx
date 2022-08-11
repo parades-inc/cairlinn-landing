@@ -58,17 +58,20 @@ export const JoinUs: FC = () => {
     }
   };
 
-
-
   return (
-    <Box id='joinUs' sx={{
-      margin: '100px 0'
+    <Box id='join-us' sx={{
+      overflow: 'hidden',
+      display: 'flex',
+      position: 'relative',
+      alignItems: 'center',
+      maxWidth: { xs: '90vw', xl: '1440px' },
+      margin: '100px auto',
     }}>
       <Box className="join-us-container" sx={{
         display: 'flex',
         justifyContent: { xs: 'center' },
         alignItems: 'center',
-        backgroundColor: { xs: '#2C2A27', md: 'rgba(0,0,0,0)' },
+        backgroundColor: { xs: '#2C2A27', xl: 'rgba(0,0,0,0)' }, //
         maxWidth: { xs: '90vw', xl: '100%' },
         margin: '0 auto',
         borderRadius: '16px',
@@ -77,8 +80,8 @@ export const JoinUs: FC = () => {
         <Box
           component="img"
           sx={{
+            position: 'relative',
             display: { xs: 'none', md: 'block' },
-            position: 'absolute',
             zIndex: -10,
             maxWidth: { xs: '90vw', xl: '1440px' },
             borderRadius: '16px',
@@ -87,11 +90,10 @@ export const JoinUs: FC = () => {
           src={joinUsImage}
         />
         <Box className={'join-us-content'} sx={{
-          position: 'relative',
-          height: '100%',
-          textAlign: 'center',
-          padding: '10vw',
-          maxWidth: '80vw'
+          position: 'absolute',
+          textAlign: { xs: 'center', xl: 'left' },
+          maxWidth: { xs: '80%', xl: '30%' },
+          left: { xs: 'inherit', xl: '5rem' }
         }}>
           { !submitState ? (
             <>
@@ -164,7 +166,6 @@ export const JoinUs: FC = () => {
               }}>CONTACT US</Button>
             </a>
           </Box>
-
         </Box>
       </Box>
     </Box>

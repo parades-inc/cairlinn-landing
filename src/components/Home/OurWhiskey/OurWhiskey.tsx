@@ -18,7 +18,7 @@ const images: ImageData[] = [
   {
     image: sunsetField,
     title: 'The Whiskey',
-    body: 'Irish Single Grain is the backbone of our whiskey, and is distilled in our column stills – “After all they were invented by an Irishman, Aeneas Coffey circa 1830”'
+    body: 'Irish Single Grain is the backbone of our whiskey, and is distilled in our column stills – “After all they were invented by an Irishman, Aeneas Coffey circa 1830”.'
   },
   {
     image: pots,
@@ -39,7 +39,7 @@ const images: ImageData[] = [
   {
     image: whiskyTableRope,
     title: 'The Blend',
-    body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies'
+    body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies.'
   }
 ];
 

@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import {HomeView} from './views/HomeView/HomeView';
 import './App.css';
 import {Footer} from './components/Footer/Footer';
+import {PrivacyPolicy} from './components/Home/PrivacyPolicy/PrivacyPolicy';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<HomeView/>}/>
+          <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
         </Routes>
       </main>
       <Footer/>

@@ -33,7 +33,7 @@ export const Cocktails: FC = () => {
             marginLeft: '25px',
             marginRight: '25px'
           }}>
-            An Irish twist on a true classic that delivers each and every time
+            An Irish twist on a true classic that delivers each and every time.
           </Typography>
           <Box
             component={'img'}
@@ -107,7 +107,7 @@ export const Cocktails: FC = () => {
             marginLeft: '25px',
             marginRight: '25px'
           }}>
-            A refreshing cocktail with three simple ingredients that make it easy to replicate at home
+            A refreshing cocktail with three simple ingredients that make it easy to replicate at home.
           </Typography>
           <Box
             component={'img'}

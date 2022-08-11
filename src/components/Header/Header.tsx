@@ -45,7 +45,7 @@ export const Header: FC = () => {
           <HashLink to='/#news'>
             <Button>News</Button>
           </HashLink>
-          <HashLink to='/#joinUs'>
+          <HashLink to='/#join-us'>
             <Button color='primary' variant={'contained'}>Join Us</Button>
           </HashLink>
         </Box>
