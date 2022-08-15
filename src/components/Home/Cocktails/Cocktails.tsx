@@ -2,7 +2,7 @@ import {FC} from 'react';
 import oldFashioned from '../../../assets/images/cocktails/old-fashioned.png';
 import irishBoulevard from '../../../assets/images/cocktails/irish-boulevardier.png';
 import thePioneer from '../../../assets/images/cocktails/the-pioneer.png';
-import {Box, Grid, Typography} from '@mui/material';
+import {Box, Divider, Grid, Typography} from '@mui/material';
 
 export const Cocktails: FC = () => {
   return (
@@ -39,7 +39,7 @@ export const Cocktails: FC = () => {
             component={'img'}
             src={oldFashioned}
             sx={{
-              width: { xs: '100%', md: '70%' },
+              width: { xs: '50%', md: '70%' },
               marginTop: '10px',
               marginBottom: '10px'
             }}
@@ -75,7 +75,7 @@ export const Cocktails: FC = () => {
             component={'img'}
             src={irishBoulevard}
             sx={{
-              width: { xs: '100%', md: '70%' },
+              width: { xs: '50%', md: '70%' },
               alignSelf: 'flex-end',
               marginTop: '35px',
               marginBottom: '10px'
@@ -113,7 +113,7 @@ export const Cocktails: FC = () => {
             component={'img'}
             src={thePioneer}
             sx={{
-              width: { xs: '100%', md: '70%' },
+              width: { xs: '50%', md: '70%' },
               padding: { xs: '5px', md: '10px' }
 
             }}

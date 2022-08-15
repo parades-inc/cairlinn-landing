@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.45e8b5f9.css",
-    "main.js": "/static/js/main.da1184b6.js",
+    "main.js": "/static/js/main.d9222085.js",
     "static/media/hero-video.mp4": "/static/media/hero-video.8d959b2e94b1b5ece96b.mp4",
     "static/media/whisky-table-rope.png": "/static/media/whisky-table-rope.52fdebd5fdc953910976.png",
     "static/media/tasting-notes.jpg": "/static/media/tasting-notes.e9e9b4bdbfd1eba355d0.jpg",
@@ -23,10 +23,10 @@
     "static/media/instagram_icon.png": "/static/media/instagram_icon.a7a31e481a67ed6d0cca.png",
     "index.html": "/index.html",
     "main.45e8b5f9.css.map": "/static/css/main.45e8b5f9.css.map",
-    "main.da1184b6.js.map": "/static/js/main.da1184b6.js.map"
+    "main.d9222085.js.map": "/static/js/main.d9222085.js.map"
   },
   "entrypoints": [
     "static/css/main.45e8b5f9.css",
-    "static/js/main.da1184b6.js"
+    "static/js/main.d9222085.js"
   ]
 }
