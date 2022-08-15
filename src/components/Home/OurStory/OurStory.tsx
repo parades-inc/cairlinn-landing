@@ -17,8 +17,8 @@ export const OurStory: FC = () => {
       backgroundPosition: 'bottom',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      marginTop: { xs: '150px' },
-      marginBottom: { xs: '100px' }
+      marginTop: { xs: '50px' },
+      marginBottom: { xs: '50px' }
     }}>
       <Box
         component="img"
@@ -46,7 +46,7 @@ export const OurStory: FC = () => {
           <Box component={'video'} autoPlay playsInline muted loop sx={{
             borderRadius: { xs: '16px' },
             zIndex: 0,
-            maxWidth: { xs: '80vw', xl: '1440px' },
+            maxWidth: { xs: '100%' },
             margin: '0 auto',
           }}>
             <source src={heroVideo} type="video/mp4"/>

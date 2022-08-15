@@ -19,8 +19,6 @@ export const ImageHero: FC = () => {
   return (
     <Box id={'hero'} className='hero-container' sx={{
       display: 'flex',
-      maxWidth: { xs: '90vw', xl: '1440px' },
-      margin: '0 auto'
     }}>
       <Box
         component='img'
@@ -29,7 +27,8 @@ export const ImageHero: FC = () => {
           position: 'relative',
           borderRadius: { xs: '16px' },
           zIndex: -10,
-          maxWidth: '100%'
+          maxWidth: '90vw',
+          margin: '0 auto'
         }}
         ref={imageRef}
       />
@@ -37,7 +36,7 @@ export const ImageHero: FC = () => {
         position: 'absolute',
         maxWidth: '1440px',
         left: { xs: 'calc(100vw - 90vw)', xl: 'calc(((100vw - 1440px) / 2) + 4rem)' },
-        padding: `${-(imageHeight - textHeight) / 2}px 0`,
+        padding: { xs: `${-(imageHeight - textHeight) / 4}px 0`, xl: `${-(imageHeight - textHeight) / 2}px 0` },
         minHeight: `${imageHeight}px`,
       }}>
         <Typography variant='h1' sx={{
