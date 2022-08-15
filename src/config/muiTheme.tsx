@@ -17,7 +17,12 @@ export let theme = createTheme({
       padding: 0,
     },
     h1: {
-
+      '@media (max-width:900px)': {
+        fontSize: 75,
+      },
+      '@media (max-width:600px)': {
+        fontSize: 36,
+      },
     }
   },
   components: {

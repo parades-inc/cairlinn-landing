@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import {FC, useEffect, useRef, useState} from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import marqueeImage from '../../../assets/images/whiskey_table.jpg';
@@ -7,30 +7,38 @@ import { HashLink } from 'react-router-hash-link';
 
 
 export const ImageHero: FC = () => {
+  const imageRef = useRef<any>();
+  const textRef = useRef<any>();
+  const [imageHeight, setImageHeight] = useState(0);
+  const [textHeight, setTextHeight] = useState(0);
+  useEffect(() => {
+    setImageHeight(imageRef?.current?.clientHeight);
+    setTextHeight(textRef?.current?.clientHeight);
+  }, []);
+  console.log(textHeight, imageHeight);
   return (
-    <Box className='hero-container' sx={{
-      overflow: 'hidden',
+    <Box id={'hero'} className='hero-container' sx={{
       display: 'flex',
-      position: 'relative',
-      alignItems: 'center',
       maxWidth: { xs: '90vw', xl: '1440px' },
-      marginLeft: 'auto',
-      marginRight: 'auto',
+      margin: '0 auto'
     }}>
       <Box
         component='img'
         src={marqueeImage}
         sx={{
+          position: 'relative',
           borderRadius: { xs: '16px' },
           zIndex: -10,
-          maxWidth: { xs: '90vw', xl: '1440px' },
-          margin: 'auto'
+          maxWidth: '100%'
         }}
+        ref={imageRef}
       />
-      <Box className='hero-text' sx={{
+      <Box className='hero-text' ref={textRef} sx={{
         position: 'absolute',
         maxWidth: '1440px',
-        left: { xs: '2rem', lg: '8rem' }
+        left: { xs: 'calc(100vw - 90vw)', xl: 'calc(((100vw - 1440px) / 2) + 4rem)' },
+        padding: `${-(imageHeight - textHeight) / 2}px 0`,
+        minHeight: `${imageHeight}px`,
       }}>
         <Typography variant='h1' sx={{
           display: 'flex',
@@ -41,7 +49,7 @@ export const ImageHero: FC = () => {
         </Typography>
         <Box sx={{
           display: 'flex',
-          marginTop: '20px'
+          marginTop: '10px'
         }}>
           <HashLink to='/#our-story'>
             <Button variant='contained'>

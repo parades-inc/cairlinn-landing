@@ -39,7 +39,7 @@ const images: ImageData[] = [
   {
     image: whiskyTableRope,
     title: 'The Blend',
-    body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies.'
+    body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies. 1. Single Grain aged in charred virgin oak, 2. Triple distilled malt finished in rye casks, and 3. Pot still finished in sherry casks.'
   }
 ];
 
