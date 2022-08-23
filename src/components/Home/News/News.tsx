@@ -3,6 +3,7 @@ import './news.css';
 import socialMediaImage from '../../../assets/images/social-media.png';
 import {Box, Button, Grid, Typography} from '@mui/material';
 import waves from '../../../assets/images/wave-lines.png';
+import award from '../../../assets/images/93Points.png';
 
 
 export const News: FC = () => {
@@ -41,6 +42,16 @@ export const News: FC = () => {
                 93 by Ultimate Spirits Challenge
               </Box>
             </Typography>
+            <Box
+              component={'img'}
+              src={award}
+              sx={{
+                width: { xs: '60%', md: '40%' },
+                padding: { xs: '10px', md: '10px' }
+
+              }}
+            >
+            </Box>
             <Typography variant='h4'>Available Summer 2022</Typography>
             <Box py={6}>
               <a href={'https://www.instagram.com/cairlinnbay/'} target={'_blank'} rel="noreferrer" >
