@@ -39,7 +39,7 @@ const images: ImageData[] = [
   {
     image: whiskyTableRope,
     title: 'The Blend',
-    body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies.'
+    body: 'The Oak & Coast expression is a unique blend of 3 quintessential Irish whiskies. 1. Single Grain aged in charred virgin oak, 2. Triple distilled malt finished in rye casks, and 3. Pot still finished in sherry casks.'
   }
 ];
 
@@ -49,7 +49,7 @@ export const OurWhiskey: FC = () => {
       <Box className={'about-text'} sx={{
         padding: { xs: '33px 65px', lg: '65px calc((100vw - 1440px) / 2)px' },
         maxWidth: '1440px',
-        margin: '0 auto'
+        margin: { xs: '100px auto 0', xl: '200px auto 0' }
       }}>
         <Typography variant='h2'>
           Authentic<br/>

@@ -1,73 +1,73 @@
 import {FC} from 'react';
-import topLeftCords from '../../../assets/images/left-cords.png'
-import bottomRightCords from '../../../assets/images/bottom-right-coords.png'
+import coordinatesLongitude from '../../../assets/images/coords_longitude_horizontal.png';
+import coordinatesLatitude from '../../../assets/images/coords_latitude_vertical.png';
 import waves from '../../../assets/images/wave-lines.png';
 import './ourStory.css';
-import {Box, Grid, Typography} from '@mui/material';
+import {Box, Grid, Typography, useMediaQuery} from '@mui/material';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import heroVideo from '../../../assets/videos/hero-video.mp4';
+import {theme} from '../../../config/muiTheme';
 
 
 export const OurStory: FC = () => {
-
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Box id='our-story' sx={{
       backgroundImage: `url(${waves})`,
       backgroundPosition: 'bottom',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      marginTop: { xs: '150px' },
-      marginBottom: { xs: '100px' }
+      margin: '50px auto'
     }}>
-      <Box
-        component="img"
-        sx={{
-          position: 'absolute',
-          marginTop: { xs: '0px'},
-          left: { xs: '0', xl: 'calc((100vw - 1440px) / 10)'},
-          width: { xs: '50px', xl: '80px'},
-          zIndex: -10
-        }}
-        alt=""
-        src={topLeftCords}
-      />
+      <Box sx={{
+        position: 'relative'
+      }}>
+        <Box
+          component="img"
+          sx={{
+            position: 'absolute',
+            marginTop: { xs: '5vw'},
+            maxWidth: { xs: '30px', xl: '80px' },
+            left: { xs: '5vw' },
+            zIndex: 1
+          }}
+          alt=""
+          src={coordinatesLatitude}
+        />
+        <Box
+          component="img"
+          sx={{
+            position: 'absolute',
+            height: { xs: '30px', xl: '80px' },
+            right: { xs: '5vw' },
+            bottom: { xs: '5vw' },
+            zIndex: 1
+          }}
+          alt="The house from the offer."
+          src={coordinatesLongitude}
+        />
+        <Box component={'video'} autoPlay playsInline muted loop sx={{
+          zIndex: 0,
+          maxWidth: { xs: '100%' },
+          borderRadius: { xs: 0, },
+          margin: '0 auto',
+        }}>
+          <source src={heroVideo} type="video/mp4"/>
+        </Box>
+      </Box>
+
       <Box className={'our-story-container'}
         sx={{
-          maxWidth: { xs: '90vw', xl: '1440px' },
+          maxWidth: { xs: '100vw' },
           margin: '0 auto',
         }}
       >
         <Box sx={{
           position: 'relative',
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          <Box component={'video'} autoPlay playsInline muted loop sx={{
-            borderRadius: { xs: '16px' },
-            zIndex: 0,
-            maxWidth: { xs: '80vw', xl: '1440px' },
-            margin: '0 auto',
-          }}>
-            <source src={heroVideo} type="video/mp4"/>
-          </Box>
-          {/*<Box sx={{*/}
-          {/*  position: 'absolute',*/}
-          {/*  top: '50%',*/}
-          {/*  left: '50%',*/}
-          {/*  transform: 'translate(-50%, -50%)'*/}
-          {/*}}>*/}
-          {/*  <Typography variant='h1' sx={{*/}
-          {/*  }}>*/}
-          {/*    Our Story*/}
-          {/*  </Typography>*/}
-          {/*</Box>*/}
-        </Box>
-        <Box sx={{
-          position: 'relative',
           height: '100%',
-          marginTop: '40px',
-          maxWidth: { xs: '90vw', xl: '1440px' }
+          maxWidth: { xs: '90vw', xl: '1440px' },
+          margin: '40px auto',
         }}>
           <Typography variant='h1' sx={{
             marginBottom: '20px'
@@ -90,16 +90,6 @@ export const OurStory: FC = () => {
             Ours is a pioneering Irish spirit.
           </Typography>
         </Box>
-        <Box
-          component="img"
-          sx={{
-            position: 'absolute',
-            height: { xs: '50px', md: '80px'},
-            right: { xs: '18px', md: '37px'},
-          }}
-          alt="The house from the offer."
-          src={bottomRightCords}
-        />
       </Box>
     </Box>
   );

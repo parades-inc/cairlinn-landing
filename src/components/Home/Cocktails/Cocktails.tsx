@@ -2,7 +2,7 @@ import {FC} from 'react';
 import oldFashioned from '../../../assets/images/cocktails/old-fashioned.png';
 import irishBoulevard from '../../../assets/images/cocktails/irish-boulevardier.png';
 import thePioneer from '../../../assets/images/cocktails/the-pioneer.png';
-import {Box, Grid, Typography} from '@mui/material';
+import {Box, Divider, Grid, Typography} from '@mui/material';
 
 export const Cocktails: FC = () => {
   return (
@@ -23,15 +23,11 @@ export const Cocktails: FC = () => {
         <Grid item xs={12} md={4} sx={{
           padding: { xs: '5px', md: '10px' }
         }}>
-          <Typography variant={'h3'} sx={{
-            marginBottom: '25px'
-          }}>
+          <Typography variant={'h3'}>
             Cairlinn Bay Old Fashioned
           </Typography>
           <Typography variant={'h6'} sx={{
-            marginTop: '25px',
-            marginLeft: '25px',
-            marginRight: '25px'
+            margin: 'auto 25px'
           }}>
             An Irish twist on a true classic that delivers each and every time.
           </Typography>
@@ -39,7 +35,7 @@ export const Cocktails: FC = () => {
             component={'img'}
             src={oldFashioned}
             sx={{
-              width: { xs: '100%', md: '70%' },
+              width: { xs: '50%', md: '70%' },
               marginTop: '10px',
               marginBottom: '10px'
             }}
@@ -59,23 +55,19 @@ export const Cocktails: FC = () => {
         <Grid item xs={12} md={4} sx={{
           padding: { xs: '5px', md: '10px' }
         }} alignSelf={'flex-end'}>
-          <Typography variant={'h3'} sx={{
-            marginBottom: '5px'
-          }}>
+          <Typography variant={'h3'}>
             The Irish Boulevardier
           </Typography>
           <Typography variant={'h6'} sx={{
-            marginTop: '25px',
-            marginLeft: '25px',
-            marginRight: '25px'
-          }} >
+            margin: 'auto 25px'
+          }}>
             A bold and delightfully complex cocktail that satisfies any palate.
           </Typography>
           <Box
             component={'img'}
             src={irishBoulevard}
             sx={{
-              width: { xs: '100%', md: '70%' },
+              width: { xs: '50%', md: '70%' },
               alignSelf: 'flex-end',
               marginTop: '35px',
               marginBottom: '10px'
@@ -97,15 +89,11 @@ export const Cocktails: FC = () => {
           padding: { xs: '3px' },
           marginTop: '0px'
         }}>
-          <Typography variant={'h3'} sx={{
-            marginBottom: '5px'
-          }}>
+          <Typography variant={'h3'}>
             The Pioneer
           </Typography>
           <Typography variant={'h6'} sx={{
-            marginTop: '25px',
-            marginLeft: '25px',
-            marginRight: '25px'
+            margin: 'auto 25px'
           }}>
             A refreshing cocktail with three simple ingredients that make it easy to replicate at home.
           </Typography>
@@ -113,7 +101,7 @@ export const Cocktails: FC = () => {
             component={'img'}
             src={thePioneer}
             sx={{
-              width: { xs: '100%', md: '70%' },
+              width: { xs: '50%', md: '70%' },
               padding: { xs: '5px', md: '10px' }
 
             }}

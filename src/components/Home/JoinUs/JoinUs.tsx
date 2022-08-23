@@ -5,9 +5,10 @@ import './joinUs.css';
 // @ts-ignore: hot fix for https://github.com/uNmAnNeR/imaskjs/issues/554
 import {IMaskInput} from 'react-imask';
 import joinUsImage from '../../../assets/images/joinUsImage.jpg';
-import {Box, Button, FormControl, Input, Typography} from '@mui/material';
+import {Box, Button, FormControl, Input, Typography, useMediaQuery} from '@mui/material';
 import { TextField } from '@mui/material';
 import axios from 'axios';
+import {theme} from '../../../config/muiTheme';
 
 interface CustomProps {
   onChange: (event: { target: { name: string; value: string } }) => void;
@@ -42,6 +43,8 @@ export const JoinUs: FC = () => {
   const [responseState, setResponseState] = useState<string>('');
   const [submitState, setSumbitState] = useState<boolean>(false);
 
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFormState({ ...formState, [event.target.name]: event.target.value });
   };
@@ -58,6 +61,99 @@ export const JoinUs: FC = () => {
     }
   };
 
+  if (isMobile) {
+    return (
+      <Box id='join-us' sx={{
+        overflow: 'hidden',
+        display: 'flex',
+        position: 'relative',
+        alignItems: 'center',
+        maxWidth: { xs: '90vw', xl: '1440px' },
+        backgroundColor: { xs: '#2C2A27', xl: 'rgba(0,0,0,0)' }, //
+        margin: '100px auto',
+        textAlign: 'center',
+        borderRadius: { xs: '16px' },
+        padding: '25px'
+      }}>
+        <Box className={'join-us-content'} sx={{
+          margin: '0 auto',
+        }}>
+          { !submitState ? (
+            <>
+              <Box className="join-us-text" sx={{
+                marginBottom: '25px'
+              }}>
+                <Typography variant="h1">Join Us</Typography>
+              </Box>
+              <Box component={'form'}>
+                <FormControl fullWidth>
+                  <TextField
+                    placeholder="Email"
+                    name={'email'}
+                    value={formState.email}
+                    onChange={handleChange}
+                    variant={'outlined'}
+                    InputProps={{
+                      inputProps: {
+                        style: {textAlign: 'center', fontSize: 20},
+                      }
+                    }}/>
+                </FormControl>
+                <FormControl fullWidth>
+                  <TextField
+                    placeholder="DOB (MM/DD/YYYY)"
+                    name={'dob'}
+                    value={formState.dob}
+                    onChange={handleChange}
+                    variant={'outlined'}
+                    InputProps={{
+                      inputComponent: TextMaskCustom as any,
+                      inputProps: {
+                        style: {textAlign: 'center', fontSize: 20},
+                      }
+                    }}
+                  />
+                </FormControl>
+                <FormControl fullWidth>
+                  <TextField
+                    placeholder="ZIP CODE"
+                    value={formState.zip}
+                    name={'zip'}
+                    onChange={handleChange}
+                    variant={'outlined'}
+                    InputProps={{
+                      inputProps: {
+                        style: {textAlign: 'center', fontSize: 20},
+                      }
+                    }}/>
+                </FormControl>
+                <Button color="primary" fullWidth variant={'contained'} onClick={handleSubmit}>GET NOTIFIED</Button>
+              </Box>
+            </>
+          ) : (
+            <Box sx={{
+              padding: '10vw',
+              backgroundColor: 'rgba(44, 42, 39, 0.6)',
+              borderRadius: '16px'
+            }}
+            >
+              <Typography variant={'h5'}>{ responseState }</Typography>
+            </Box>
+          )}
+          <Box sx={{
+            marginTop: 4
+          }}>
+            <a href={'mailto:info@cairlinnbay.com'}>
+              <Button color="secondary" fullWidth variant={'contained'} onClick={handleSubmit} sx={{
+                color: 'rgba(0, 0, 0, 0.4) !important',
+              }}>CONTACT US</Button>
+            </a>
+          </Box>
+        </Box>
+      </Box>
+    )
+  }
+
   return (
     <Box id='join-us' sx={{
       overflow: 'hidden',
@@ -71,7 +167,7 @@ export const JoinUs: FC = () => {
         display: 'flex',
         justifyContent: { xs: 'center' },
         alignItems: 'center',
-        backgroundColor: { xs: '#2C2A27', xl: 'rgba(0,0,0,0)' }, //
+        // backgroundColor: { xs: '#2C2A27', xl: 'rgba(0,0,0,0)' }, //
         maxWidth: { xs: '90vw', xl: '100%' },
         margin: '0 auto',
         borderRadius: '16px',
@@ -81,7 +177,7 @@ export const JoinUs: FC = () => {
           component="img"
           sx={{
             position: 'relative',
-            display: { xs: 'none', md: 'block' },
+            display: { xs: 'none', xl: 'block' },
             zIndex: -10,
             maxWidth: { xs: '90vw', xl: '1440px' },
             borderRadius: '16px',
@@ -93,7 +189,8 @@ export const JoinUs: FC = () => {
           position: 'absolute',
           textAlign: { xs: 'center', xl: 'left' },
           maxWidth: { xs: '80%', xl: '30%' },
-          left: { xs: 'inherit', xl: '5rem' }
+          left: { xs: 'inherit', xl: '5rem' },
+          margin: '0 auto',
         }}>
           { !submitState ? (
             <>
