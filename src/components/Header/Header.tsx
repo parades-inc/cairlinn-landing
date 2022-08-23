@@ -24,10 +24,6 @@ const links = [
   {
     name: 'Our Cocktails',
     to: '/#our-cocktails'
-  },
-  {
-    name: 'News',
-    to: '/#news'
   }
 ];
 

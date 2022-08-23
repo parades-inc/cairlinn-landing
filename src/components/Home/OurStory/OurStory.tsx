@@ -3,15 +3,13 @@ import coordinatesLongitude from '../../../assets/images/coords_longitude_horizo
 import coordinatesLatitude from '../../../assets/images/coords_latitude_vertical.png';
 import waves from '../../../assets/images/wave-lines.png';
 import './ourStory.css';
-import {Box, Grid, Typography, useMediaQuery} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import heroVideo from '../../../assets/videos/hero-video.mp4';
-import {theme} from '../../../config/muiTheme';
 
 
 export const OurStory: FC = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Box id='our-story' sx={{
       backgroundImage: `url(${waves})`,
@@ -56,7 +54,6 @@ export const OurStory: FC = () => {
           <source src={heroVideo} type="video/mp4"/>
         </Box>
       </Box>
-
       <Box className={'our-story-container'}
         sx={{
           maxWidth: { xs: '100vw' },
