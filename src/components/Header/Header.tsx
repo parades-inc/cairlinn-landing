@@ -73,7 +73,7 @@ export const Header: FC = () => {
               <Button>News</Button>
             </HashLink>
           </Hidden>
-          <a href='https://jensensliquors.com/cairlinn-bay-oak-coast-rye-cask-finish-irish-whiskey.html'>
+          <a href='https://shopcairlinnbay.com/'>
             <Button color='primary' variant={'contained'}>Buy Now</Button>
           </a>
         </Box>
