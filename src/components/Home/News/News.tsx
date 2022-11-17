@@ -22,7 +22,7 @@ export const News: FC = () => {
         maxWidth: '1440px',
         margin: '0 auto'
       }}>
-        <Typography variant='h1'>
+        <Typography variant='h1' align="center" sx={{paddingBottom: '100px'}}>
           News
         </Typography>
         <Grid container justifyContent={'space-around'} alignItems={'center'}>
@@ -31,7 +31,7 @@ export const News: FC = () => {
               component={'img'}
               src={award2}
               sx={{
-                width: { xs: '80%', md: '100%' },
+                width: { xs: '100%', md: '100%' },
                 padding: { xs: '10px', md: '10px' }
 
               }}
@@ -50,7 +50,7 @@ https://secure.bevtest.com/Secure/MyReviews.aspx?Tab=REVIEWS&Year=LATEST
               component={'img'}
               src={award}
               sx={{
-                width: { xs: '80%', md: '100%' },
+                width: { xs: '100%', md: '100%' },
                 padding: { xs: '10px', md: '10px' }
 
               }}
@@ -67,7 +67,7 @@ https://secure.bevtest.com/Secure/MyReviews.aspx?Tab=REVIEWS&Year=LATEST
               component={'img'}
               src={award3}
               sx={{
-                width: { xs: '80%', md: '100%' },
+                width: { xs: '100%', md: '100%' },
                 padding: { xs: '10px', md: '10px' }
 
               }}
