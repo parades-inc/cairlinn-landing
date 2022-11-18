@@ -79,7 +79,15 @@ https://secure.bevtest.com/Secure/MyReviews.aspx?Tab=REVIEWS&Year=LATEST
               </a>
             </Typography>
           </Grid>
-
+        </Grid>
+        <Grid container justifyContent={'space-around'} alignItems={'center'}>
+            <Box py={12}>
+              <a href={'https://www.instagram.com/cairlinnbay/'} target={'_blank'} rel="noreferrer" >
+                <Button variant='contained'>
+                  Follow Us On Instagram
+                </Button>
+              </a>
+            </Box>
         </Grid>
       </Box>
     </Box>
